@@ -1045,14 +1045,6 @@ services:
 &lt;/ul&gt;
 &lt;p&gt;已经支持 hexo 5。&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;因博主被学业和工作掏空，本项目已停滞更新大半年，问题也无法及时回复大家，这个悲惨状态可能还要持续半年的样子。&lt;/p&gt;
-&lt;p&gt;有很多热心小伙伴在评论区或者项目 issue 帮忙回答问题，非常非常感谢！&lt;/p&gt;
-&lt;p&gt;本项目是完全开源的，也有做一些 example 示例，大家可以随便拿随便改。&lt;br&gt;
-但是很抱歉，博主我暂时不能提供更多的支持，这个写的乱七八糟的文档，暂时也没有时间把它写得更专业一些。&lt;br&gt;
-非常对不住大家！&lt;/p&gt;
-&lt;p&gt;iconfont 的添加申请，我看到留言后会尽快加上，希望各位小伙伴能看到。&lt;/p&gt;
-&lt;/div&gt;
 &lt;div class=&#34;note warning&#34;&gt;
 &lt;p&gt;当前版本更新至 0.2.5，&lt;a href=&#34;#%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95&#34;&gt;更新记录点此&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -1060,9 +1052,6 @@ services:
 &lt;p&gt;&lt;a href=&#34;/computer-science/note/theme-shoka-doc/&#34;&gt;&lt;strong&gt;🚀快速开始&lt;/strong&gt;&lt;/a&gt; - &lt;a href=&#34;/computer-science/note/theme-shoka-doc/dependents/&#34;&gt;💌依赖插件&lt;/a&gt; - &lt;a href=&#34;/computer-science/note/theme-shoka-doc/config/&#34;&gt;📌基本配置&lt;/a&gt; - &lt;a href=&#34;/computer-science/note/theme-shoka-doc/display/&#34;&gt;🌈界面显示&lt;/a&gt; - &lt;a href=&#34;/computer-science/note/theme-shoka-doc/special/&#34;&gt;🦄特殊功能&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;h1 id=&#34;设计缘由&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#设计缘由&#34;&gt;#&lt;/a&gt; 设计缘由&lt;/h1&gt;
-&lt;p&gt;前几年在 Bear 和 Evernote 上整理了大量笔记，非常喜欢 Bear 默认的 markdown 渲染样式。&lt;br&gt;
-后来因为换了安卓手机，用不了 Bear，四处搜寻替代品，没有满意的。&lt;br&gt;
-然后阴差阳错知道了 Hexo，又得知 Github 也可以免费建私有仓库了，故再次转移阵地到了自建博客，并部署在 Github Pages。&lt;/p&gt;
 &lt;p&gt;因为这个博客是用来记笔记的，故起名 &lt;code&gt;书架&lt;/code&gt; 。&lt;br&gt;
 对应的主题即 &lt;code&gt;Theme.Shoka&lt;/code&gt; ，可以说是为了笔记阅读而生的主题。&lt;br&gt;
 样式严重参考 Bear，部分代码严重参考&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQv&#34;&gt; NexT&lt;/span&gt;。&lt;/p&gt;
