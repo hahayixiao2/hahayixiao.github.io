@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://hahayixiao.gitlab.io</id>
+    <id>https://hahayixiao2.github.io</id>
     <title>一个小萌新的进阶之路 • Posts by &#34;docker&#34; tag</title>
-    <link href="https://hahayixiao.gitlab.io" />
+    <link href="https://hahayixiao2.github.io" />
     <updated>2022-05-02T12:56:48.000Z</updated>
-    <category term="Hexo" />
-    <category term="教程" />
     <category term="Foo" />
     <category term="Bar" />
+    <category term="Hexo" />
+    <category term="教程" />
     <category term="Docker" />
     <entry>
-        <id>https://hahayixiao.gitlab.io/computer-science/container/Docker/docker/</id>
+        <id>https://hahayixiao2.github.io/computer-science/container/Docker/docker/</id>
         <title>docker笔记</title>
-        <link rel="alternate" href="https://hahayixiao.gitlab.io/computer-science/container/Docker/docker/"/>
+        <link rel="alternate" href="https://hahayixiao2.github.io/computer-science/container/Docker/docker/"/>
         <content type="html">&lt;h2 id=&#34;docker&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker&#34;&gt;#&lt;/a&gt; docker&lt;/h2&gt;
 &lt;h3 id=&#34;10-docker-安装步骤&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10-docker-安装步骤&#34;&gt;#&lt;/a&gt; 1.0 docker 安装步骤&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;/%E5%AE%89%E8%A3%85%E6%B5%81%E7%A8%8B.png&#34; alt=&#34;安装流程&#34;&gt;&lt;/p&gt;
@@ -885,9 +885,9 @@ services:
         <updated>2022-05-02T12:56:48.000Z</updated>
     </entry>
     <entry>
-        <id>https://hahayixiao.gitlab.io/computer-science/container/DockerCompose%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/dockercompose/</id>
+        <id>https://hahayixiao2.github.io/computer-science/container/DockerCompose%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/dockercompose/</id>
         <title>dockercompose笔记</title>
-        <link rel="alternate" href="https://hahayixiao.gitlab.io/computer-science/container/DockerCompose%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/dockercompose/"/>
+        <link rel="alternate" href="https://hahayixiao2.github.io/computer-science/container/DockerCompose%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/dockercompose/"/>
         <content type="html">&lt;h1 id=&#34;docker-compose入门学习&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker-compose入门学习&#34;&gt;#&lt;/a&gt; Docker Compose 入门学习&lt;/h1&gt;
 &lt;h2 id=&#34;简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h2&gt;
 &lt;p&gt;我们之前操作 Docker 的过程是：DockerFile  build run 进行手动操作，单个容器，如果假设我们有 100 个微服务，并行微服务之间还存在依赖关系。这个时候，我们就可以使用 Docker Compose 来轻松高效的管理容器，定义运行多个容器。&lt;/p&gt;
