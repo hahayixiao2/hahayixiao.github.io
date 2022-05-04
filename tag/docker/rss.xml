@@ -7,10 +7,10 @@
         <language>zh-CN</language>
         <pubDate>Mon, 02 May 2022 20:56:48 +0800</pubDate>
         <lastBuildDate>Mon, 02 May 2022 20:56:48 +0800</lastBuildDate>
-        <category>Foo</category>
-        <category>Bar</category>
         <category>Hexo</category>
         <category>教程</category>
+        <category>Foo</category>
+        <category>Bar</category>
         <category>Docker</category>
         <item>
             <guid isPermalink="true">https://hahayixiao.gitlab.io/computer-science/container/Docker/docker/</guid>

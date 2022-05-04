@@ -7,10 +7,10 @@
         <language>zh-CN</language>
         <pubDate>Tue, 24 Jul 2018 23:31:06 +0800</pubDate>
         <lastBuildDate>Tue, 24 Jul 2018 23:31:06 +0800</lastBuildDate>
-        <category>Foo</category>
-        <category>Bar</category>
         <category>Hexo</category>
         <category>教程</category>
+        <category>Foo</category>
+        <category>Bar</category>
         <category>Docker</category>
         <item>
             <guid isPermalink="true">https://hahayixiao.gitlab.io/markdown/</guid>

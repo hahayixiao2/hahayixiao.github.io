@@ -4,10 +4,10 @@
     <title>一个小萌新的进阶之路 • Posts by &#34;bar&#34; tag</title>
     <link href="https://hahayixiao.gitlab.io" />
     <updated>2018-07-24T15:31:06.000Z</updated>
-    <category term="Foo" />
-    <category term="Bar" />
     <category term="Hexo" />
     <category term="教程" />
+    <category term="Foo" />
+    <category term="Bar" />
     <category term="Docker" />
     <entry>
         <id>https://hahayixiao.gitlab.io/markdown/</id>
