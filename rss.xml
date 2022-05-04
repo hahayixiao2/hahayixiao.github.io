@@ -5,13 +5,42 @@
         <link>https://hahayixiao2.github.io</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Mon, 02 May 2022 20:56:48 +0800</pubDate>
-        <lastBuildDate>Mon, 02 May 2022 20:56:48 +0800</lastBuildDate>
+        <pubDate>Wed, 04 May 2022 13:06:00 +0800</pubDate>
+        <lastBuildDate>Wed, 04 May 2022 13:06:00 +0800</lastBuildDate>
         <category>Foo</category>
         <category>Bar</category>
         <category>Hexo</category>
         <category>教程</category>
         <category>Docker</category>
+        <item>
+            <guid isPermalink="true">https://hahayixiao2.github.io/computer-science/container/DockerDesktop%E5%85%A5%E9%97%A8%E7%AE%80%E4%BB%8B/dockerdesktop/</guid>
+            <title></title>
+            <link>https://hahayixiao2.github.io/computer-science/container/DockerDesktop%E5%85%A5%E9%97%A8%E7%AE%80%E4%BB%8B/dockerdesktop/</link>
+            <pubDate>Wed, 04 May 2022 13:06:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;dockerdesktop入门简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#dockerdesktop入门简介&#34;&gt;#&lt;/a&gt; DockerDesktop 入门简介&lt;/h1&gt;
+&lt;h2 id=&#34;参考&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#参考&#34;&gt;#&lt;/a&gt; 参考&lt;/h2&gt;
+&lt;p&gt;参考：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zZWdtZW50ZmF1bHQuY29tL2EvMTE5MDAwMDAyMjA1OTg5NQ==&#34;&gt;https://segmentfault.com/a/1190000022059895&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#介绍&#34;&gt;#&lt;/a&gt; 介绍&lt;/h2&gt;
+&lt;p&gt;Docker Desktop 是一款专门为 Windows 和 Mac 提供桌面化的容器开发环境，在 Windows 中，Docker Desktop 使用了 Windows 的 Hyper-V 虚拟化技术，因此需要一台打开了硬件虚拟化的电脑，并且安装的是 Windows10 专业版以上的系统。&lt;/p&gt;
+&lt;h2 id=&#34;下载&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#下载&#34;&gt;#&lt;/a&gt; 下载&lt;/h2&gt;
+&lt;p&gt;首先到官网下载对应版本的 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZG9ja2VyLmNvbS9wcm9kdWN0cy9kb2NrZXItZGVza3RvcA==&#34;&gt;Docker Desktop 安装包&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装&#34;&gt;#&lt;/a&gt; 安装&lt;/h2&gt;
+&lt;p&gt;首先我们需要：启用或关闭 Windows 功能&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;images/image-20201209171318151.png&#34; alt=&#34;image-20201209171318151&#34;&gt;&lt;/p&gt;
+&lt;p&gt;然后勾选下面的选项&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;images/image-20201209171418171.png&#34; alt=&#34;image-20201209171418171&#34;&gt;&lt;/p&gt;
+&lt;p&gt;然后开始运行我们下载好的 DockerDesktop.exe，我们进行安装过程中，首先会进行一系列的检查，包括是否开启虚拟化，以及是否满足条件&lt;/p&gt;
+&lt;h2 id=&#34;运行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#运行&#34;&gt;#&lt;/a&gt; 运行&lt;/h2&gt;
+&lt;p&gt;安装完成后，点击图片 Docker Desktop&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;images/image-20201209170935134.png&#34; alt=&#34;image-20201209170935134&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这个问题是因为我们使用的 wsl2 版本太旧，需要我们手动更新一下，首先根据提示去微软官网下载最新版的 wsl2 安装包，然后进行安装：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93c2xzdG9yZXN0b3JhZ2UuYmxvYi5jb3JlLndpbmRvd3MubmV0L3dzbGJsb2Ivd3NsX3VwZGF0ZV94NjQubXNp&#34;&gt;安装包点我传送&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;然后在重新安装，即可完成我们 Docker Desktop&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;images/image-20201209171230973.png&#34; alt=&#34;image-20201209171230973&#34;&gt;&lt;/p&gt;
+&lt;p&gt;然后我们打开 powershell 即可查看到我们安装的 docker 版本了&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; --version&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;images/image-20201209172301044.png&#34; alt=&#34;image-20201209172301044&#34;&gt;&lt;/p&gt;
+&lt;p&gt;下面就可以安装在 Linux 使用 Docker 的操作，到 Windows 进行操作了～&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://hahayixiao2.github.io/computer-science/container/Docker/docker/</guid>
             <title>docker笔记</title>
