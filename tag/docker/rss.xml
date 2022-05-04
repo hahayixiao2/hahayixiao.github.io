@@ -31,7 +31,7 @@
 &lt;p&gt;&lt;img data-src=&#34;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/docker/image-20201206093922397.png&#34; alt=&#34;image-20201206093922397&#34;&gt;&lt;/p&gt;
 &lt;p&gt;可以发现，它提供了只有 5MB 的系统镜像可供我们进行下载使用&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 下载 alpine 镜像&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;docker&lt;/span&gt; pull alpine&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;同时，它还列举了一个例子 【通过制作一个 mysql 镜像】&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;images/image-20201206094302242.png&#34; alt=&#34;image-20201206094302242&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/docker/image-20201206094302242.png&#34; alt=&#34;image-20201206094302242&#34;&gt;&lt;/p&gt;
 &lt;p&gt;使用 Alpine 和 Ubuntu 制作出来的镜像一个是 36.8MB 一个是 145MB，相差 4 倍多&lt;/p&gt;
 &lt;p&gt;目前 Docker 官方已经开始推荐 Alpine 替代之前的 Ubuntu 作为基础镜像环境，这样所带来的好处包括：镜像下载速度更快、镜像安全性提高、主机之间的切换更方便、占用内存更少等特点。&lt;/p&gt;
 &lt;h2 id=&#34;使用alpine镜像&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#使用alpine镜像&#34;&gt;#&lt;/a&gt; 使用 Alpine 镜像&lt;/h2&gt;
