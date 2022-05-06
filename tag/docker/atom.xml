@@ -45,7 +45,7 @@ sudo systemctl restart docke2.r
 &lt;h4 id=&#34;202-镜像命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#202-镜像命令&#34;&gt;#&lt;/a&gt; 2.0.2 镜像命令&lt;/h4&gt;
 &lt;h5 id=&#34;2021-显示已有镜像&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2021-显示已有镜像&#34;&gt;#&lt;/a&gt; 2.0.2.1 显示已有镜像&lt;/h5&gt;
 &lt;p&gt;列出本地主机上面的镜像&lt;/p&gt;
-&lt;p&gt;![](&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jZ2MtYmxvZy5vc3MtY24tYmVpamluZy5hbGl5dW5jcy5jb20vY29udGFpbmVyL2RvY2tlcmFsbC9kb2NrZXI=&#34;&gt;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/docker&lt;/span&gt; images.jpg)&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/images.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;如图所示：&lt;/p&gt;
 &lt;p&gt;REPOSITORY：表示镜像的仓库源&lt;/p&gt;
 &lt;p&gt;TAG: 表示镜像的标签（版本号）&lt;/p&gt;
@@ -59,7 +59,7 @@ sudo systemctl restart docke2.r
 &lt;li&gt;-q：只显示镜像 ID&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h5 id=&#34;2022-从仓库查找镜像&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2022-从仓库查找镜像&#34;&gt;#&lt;/a&gt; 2.0.2.2 从仓库查找镜像&lt;/h5&gt;
-&lt;p&gt;![](&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jZ2MtYmxvZy5vc3MtY24tYmVpamluZy5hbGl5dW5jcy5jb20vY29udGFpbmVyL2RvY2tlcmFsbC9kb2NrZXI=&#34;&gt;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/docker&lt;/span&gt; search.jpg)&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/search.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;NAME：镜像名称&lt;/p&gt;
 &lt;p&gt;DESCRIPTION: 镜像说明&lt;/p&gt;
 &lt;p&gt;STARTS: 点赞数量&lt;/p&gt;
@@ -68,16 +68,16 @@ sudo systemctl restart docke2.r
 &lt;p&gt;-option 操作说明：&lt;/p&gt;
 &lt;p&gt;–limit ：只列出 N 个镜像，默认 25 个 （docker search --limit 5 redis）&lt;/p&gt;
 &lt;h5 id=&#34;2023-下载镜像&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2023-下载镜像&#34;&gt;#&lt;/a&gt; 2.0.2.3 下载镜像&lt;/h5&gt;
-&lt;p&gt;![](&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jZ2MtYmxvZy5vc3MtY24tYmVpamluZy5hbGl5dW5jcy5jb20vY29udGFpbmVyL2RvY2tlcmFsbC9kb2NrZXI=&#34;&gt;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/docker&lt;/span&gt; pull.png)&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/pull.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;下载镜像&lt;/p&gt;
 &lt;p&gt;1.docker pull 镜像名字 [:TAG]&lt;/p&gt;
 &lt;p&gt;2.docker pull 镜像名字&lt;/p&gt;
 &lt;p&gt;(1). 没有 TAG 就是最新版 = docker pull 镜像名字:latest&lt;/p&gt;
 &lt;h5 id=&#34;2024-查看docker资源占用情况&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2024-查看docker资源占用情况&#34;&gt;#&lt;/a&gt; 2.0.2.4 查看 docker 资源占用情况&lt;/h5&gt;
 &lt;p&gt;docker system df&lt;/p&gt;
-&lt;p&gt;![](&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jZ2MtYmxvZy5vc3MtY24tYmVpamluZy5hbGl5dW5jcy5jb20vY29udGFpbmVyL2RvY2tlcmFsbC9kb2NrZXI=&#34;&gt;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/docker&lt;/span&gt; system df.png)&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/df.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h5 id=&#34;2025-删除镜像&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2025-删除镜像&#34;&gt;#&lt;/a&gt; 2.0.2.5  删除镜像&lt;/h5&gt;
-&lt;p&gt;![](&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jZ2MtYmxvZy5vc3MtY24tYmVpamluZy5hbGl5dW5jcy5jb20vY29udGFpbmVyL2RvY2tlcmFsbC9kb2NrZXI=&#34;&gt;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/docker&lt;/span&gt; rmi.png)&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/rmi.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;1.docker rmi -f 镜像 id（删除单个)&lt;/p&gt;
 &lt;p&gt;2.docker rmi -f 镜像名 1:tag 镜像名 2:tag (删除多个)&lt;/p&gt;
 &lt;p&gt;3.docker rmi -f $(docker images -qa) （删除全部）&lt;/p&gt;
@@ -89,7 +89,7 @@ sudo systemctl restart docke2.r
 &lt;p&gt;-t：为容器分配一个伪输入终端，通常与 - i 一起使用，也即启动交互式容器（前台有伪终端，等待交互）&lt;/p&gt;
 &lt;p&gt;-P：随机端口映射，大写 P&lt;/p&gt;
 &lt;p&gt;-p：指定端口映射，小写 p&lt;/p&gt;
-&lt;p&gt;![image-20220201150011636](&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jZ2MtYmxvZy5vc3MtY24tYmVpamluZy5hbGl5dW5jcy5jb20vY29udGFpbmVyL2RvY2tlcmFsbC9kb2NrZXI=&#34;&gt;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/docker&lt;/span&gt; run.png)&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/run.png&#34; alt=&#34;image-20220201150011636&#34;&gt;&lt;/p&gt;
 &lt;h5 id=&#34;2027-查看容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2027-查看容器&#34;&gt;#&lt;/a&gt; 2.0.2.7 查看容器&lt;/h5&gt;
 &lt;p&gt;docker ps&lt;/p&gt;
 &lt;p&gt;-a: 列出所有正在运行的容器&lt;/p&gt;
@@ -670,11 +670,9 @@ ENTRYPOINT [&amp;quot;java&amp;quot;,&amp;quot;-jar&amp;quot;,&amp;quot;/zzyy_do
 #暴露6001端口作为微服务
 EXPOSE 6001
 &lt;/code&gt;&lt;/pre&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;docker build -t zzyy_docker:1.6 .&lt;/li&gt;
-&lt;li&gt;执行 docker-compose up 或者 docker-compose up -d&lt;/li&gt;
-&lt;li&gt;关闭 docker-compose stop&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;4.docker build -t zzyy_docker:1.6 .&lt;/p&gt;
+&lt;p&gt;5. 执行 docker-compose up 或者 docker-compose up -d&lt;/p&gt;
+&lt;p&gt;6. 关闭 docker-compose stop&lt;/p&gt;
 &lt;h3 id=&#34;130-docker-轻量级可视化工具portainer&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#130-docker-轻量级可视化工具portainer&#34;&gt;#&lt;/a&gt; 13.0 Docker 轻量级可视化工具 Portainer&lt;/h3&gt;
 &lt;p&gt;1. 是什么？&lt;/p&gt;
 &lt;p&gt;Portainer 是一款轻量级的应用，它提供了图形化界面，用于方便地管理 Docker 环境，包括单机环境和集群环境。&lt;/p&gt;
