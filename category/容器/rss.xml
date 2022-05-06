@@ -20,10 +20,10 @@
             <category>Docker</category>
             <pubDate>Fri, 06 May 2022 18:15:48 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;docker&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker&#34;&gt;#&lt;/a&gt; docker&lt;/h2&gt;
-&lt;h3 id=&#34;10-docker-安装步骤&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10-docker-安装步骤&#34;&gt;#&lt;/a&gt; 1.0 docker 安装步骤&lt;/h3&gt;
+&lt;h3 id=&#34;docker-安装步骤&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker-安装步骤&#34;&gt;#&lt;/a&gt; docker 安装步骤&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/%E5%AE%89%E8%A3%85%E6%B5%81%E7%A8%8B.png&#34; alt=&#34;安装流程&#34;&gt;&lt;/p&gt;
 &lt;p&gt;运行 docker run hello-world 能出现这个说明 docker 已经安装成功了！&lt;/p&gt;
-&lt;h4 id=&#34;101-docker-配置阿里云加速&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#101-docker-配置阿里云加速&#34;&gt;#&lt;/a&gt; 1.0.1 docker 配置阿里云加速&lt;/h4&gt;
+&lt;h4 id=&#34;docker-配置阿里云加速&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker-配置阿里云加速&#34;&gt;#&lt;/a&gt; docker 配置阿里云加速&lt;/h4&gt;
 &lt;p&gt;登录阿里云 -&amp;gt; 选择容器镜像服务 -&amp;gt; 选择镜像加速器&lt;/p&gt;
 &lt;p&gt;共有 ubuntu，centos，mac，windows 版本&lt;/p&gt;
 &lt;p&gt;centos 配置&lt;/p&gt;
@@ -36,8 +36,8 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docke2.r
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;20-docker常用命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20-docker常用命令&#34;&gt;#&lt;/a&gt; 2.0 docker 常用命令&lt;/h3&gt;
-&lt;h4 id=&#34;201-帮助启动类命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#201-帮助启动类命令&#34;&gt;#&lt;/a&gt; 2.0.1 帮助启动类命令&lt;/h4&gt;
+&lt;h3 id=&#34;docker常用命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker常用命令&#34;&gt;#&lt;/a&gt; docker 常用命令&lt;/h3&gt;
+&lt;h4 id=&#34;帮助启动类命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#帮助启动类命令&#34;&gt;#&lt;/a&gt; 帮助启动类命令&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;1. 启动docker ：systemctl start docker
 2. 停止docker ：systemctl stop docker
 3. 重启docker：systemctl restart docker
@@ -47,8 +47,8 @@ sudo systemctl restart docke2.r
 7. 查看docker总体帮助文档：docker --help
 8. 查看docker命令帮助文档：docker具体命令 --help
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;202-镜像命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#202-镜像命令&#34;&gt;#&lt;/a&gt; 2.0.2 镜像命令&lt;/h4&gt;
-&lt;h5 id=&#34;2021-显示已有镜像&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2021-显示已有镜像&#34;&gt;#&lt;/a&gt; 2.0.2.1 显示已有镜像&lt;/h5&gt;
+&lt;h4 id=&#34;镜像命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#镜像命令&#34;&gt;#&lt;/a&gt; 镜像命令&lt;/h4&gt;
+&lt;h5 id=&#34;显示已有镜像&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#显示已有镜像&#34;&gt;#&lt;/a&gt; 显示已有镜像&lt;/h5&gt;
 &lt;p&gt;列出本地主机上面的镜像&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/images.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;如图所示：&lt;/p&gt;
@@ -63,7 +63,7 @@ sudo systemctl restart docke2.r
 &lt;li&gt;-a：列出本地的所有镜像 (含历史)&lt;/li&gt;
 &lt;li&gt;-q：只显示镜像 ID&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h5 id=&#34;2022-从仓库查找镜像&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2022-从仓库查找镜像&#34;&gt;#&lt;/a&gt; 2.0.2.2 从仓库查找镜像&lt;/h5&gt;
+&lt;h5 id=&#34;从仓库查找镜像&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#从仓库查找镜像&#34;&gt;#&lt;/a&gt; 从仓库查找镜像&lt;/h5&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/search.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;NAME：镜像名称&lt;/p&gt;
 &lt;p&gt;DESCRIPTION: 镜像说明&lt;/p&gt;
@@ -72,21 +72,21 @@ sudo systemctl restart docke2.r
 &lt;p&gt;AUTOMATED: 是否是自动构建的&lt;/p&gt;
 &lt;p&gt;-option 操作说明：&lt;/p&gt;
 &lt;p&gt;–limit ：只列出 N 个镜像，默认 25 个 （docker search --limit 5 redis）&lt;/p&gt;
-&lt;h5 id=&#34;2023-下载镜像&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2023-下载镜像&#34;&gt;#&lt;/a&gt; 2.0.2.3 下载镜像&lt;/h5&gt;
+&lt;h5 id=&#34;下载镜像&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#下载镜像&#34;&gt;#&lt;/a&gt; 下载镜像&lt;/h5&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/pull.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;下载镜像&lt;/p&gt;
 &lt;p&gt;1.docker pull 镜像名字 [:TAG]&lt;/p&gt;
 &lt;p&gt;2.docker pull 镜像名字&lt;/p&gt;
 &lt;p&gt;(1). 没有 TAG 就是最新版 = docker pull 镜像名字:latest&lt;/p&gt;
-&lt;h5 id=&#34;2024-查看docker资源占用情况&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2024-查看docker资源占用情况&#34;&gt;#&lt;/a&gt; 2.0.2.4 查看 docker 资源占用情况&lt;/h5&gt;
+&lt;h5 id=&#34;查看docker资源占用情况&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看docker资源占用情况&#34;&gt;#&lt;/a&gt; 查看 docker 资源占用情况&lt;/h5&gt;
 &lt;p&gt;docker system df&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/df.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h5 id=&#34;2025-删除镜像&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2025-删除镜像&#34;&gt;#&lt;/a&gt; 2.0.2.5  删除镜像&lt;/h5&gt;
+&lt;h5 id=&#34;删除镜像&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#删除镜像&#34;&gt;#&lt;/a&gt; 删除镜像&lt;/h5&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/rmi.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;1.docker rmi -f 镜像 id（删除单个)&lt;/p&gt;
 &lt;p&gt;2.docker rmi -f 镜像名 1:tag 镜像名 2:tag (删除多个)&lt;/p&gt;
 &lt;p&gt;3.docker rmi -f $(docker images -qa) （删除全部）&lt;/p&gt;
-&lt;h5 id=&#34;2026-启动交互式容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2026-启动交互式容器&#34;&gt;#&lt;/a&gt; 2.0.2.6 启动交互式容器&lt;/h5&gt;
+&lt;h5 id=&#34;启动交互式容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#启动交互式容器&#34;&gt;#&lt;/a&gt; 启动交互式容器&lt;/h5&gt;
 &lt;p&gt;docker run（前台命令行）&lt;/p&gt;
 &lt;p&gt;–name =“容器的新名字”&lt;/p&gt;
 &lt;p&gt;-d：后台运行容器并且返回容器 id，也即启动守护式容器（后台运行）；&lt;/p&gt;
@@ -95,50 +95,50 @@ sudo systemctl restart docke2.r
 &lt;p&gt;-P：随机端口映射，大写 P&lt;/p&gt;
 &lt;p&gt;-p：指定端口映射，小写 p&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/run.png&#34; alt=&#34;image-20220201150011636&#34;&gt;&lt;/p&gt;
-&lt;h5 id=&#34;2027-查看容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2027-查看容器&#34;&gt;#&lt;/a&gt; 2.0.2.7 查看容器&lt;/h5&gt;
+&lt;h5 id=&#34;查看容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看容器&#34;&gt;#&lt;/a&gt; 查看容器&lt;/h5&gt;
 &lt;p&gt;docker ps&lt;/p&gt;
 &lt;p&gt;-a: 列出所有正在运行的容器&lt;/p&gt;
 &lt;p&gt;-l：显示最近创建的容器&lt;/p&gt;
 &lt;p&gt;-n: 显示最近 n 个创建的容器&lt;/p&gt;
 &lt;p&gt;-q：静默模式，只显示容器编号&lt;/p&gt;
-&lt;h5 id=&#34;2028-退出容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2028-退出容器&#34;&gt;#&lt;/a&gt; 2.0.2.8 退出容器&lt;/h5&gt;
+&lt;h5 id=&#34;退出容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#退出容器&#34;&gt;#&lt;/a&gt; 退出容器&lt;/h5&gt;
 &lt;p&gt;（1）.exit： run 进去容器，exit 退出，容器停止&lt;/p&gt;
 &lt;p&gt;（2）.ctrl+p+q run 进去容器，ctrl+p+q 退出，容器不停止&lt;/p&gt;
-&lt;h5 id=&#34;2029-启动容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2029-启动容器&#34;&gt;#&lt;/a&gt; 2.0.2.9 启动容器&lt;/h5&gt;
+&lt;h5 id=&#34;启动容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#启动容器&#34;&gt;#&lt;/a&gt; 启动容器&lt;/h5&gt;
 &lt;p&gt;（1）.docker start 容器 ID 或者容器名&lt;/p&gt;
-&lt;h5 id=&#34;20210-停止容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20210-停止容器&#34;&gt;#&lt;/a&gt; 2.0.2.10 停止容器&lt;/h5&gt;
+&lt;h5 id=&#34;停止容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#停止容器&#34;&gt;#&lt;/a&gt; 停止容器&lt;/h5&gt;
 &lt;p&gt;（1）.docker stop 容器 ID 或者容器名&lt;/p&gt;
-&lt;h5 id=&#34;20211-重启容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20211-重启容器&#34;&gt;#&lt;/a&gt; 2.0.2.11 重启容器&lt;/h5&gt;
+&lt;h5 id=&#34;重启容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#重启容器&#34;&gt;#&lt;/a&gt; 重启容器&lt;/h5&gt;
 &lt;p&gt;（1）.docker restart 容器 ID 或者容器名&lt;/p&gt;
-&lt;h5 id=&#34;20212-强制停止容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20212-强制停止容器&#34;&gt;#&lt;/a&gt; 2.0.2.12 强制停止容器&lt;/h5&gt;
+&lt;h5 id=&#34;强制停止容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#强制停止容器&#34;&gt;#&lt;/a&gt; 强制停止容器&lt;/h5&gt;
 &lt;p&gt;（1）.docker kill 容器 ID 或者容器名&lt;/p&gt;
-&lt;h5 id=&#34;20213-删除已停止的容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20213-删除已停止的容器&#34;&gt;#&lt;/a&gt; 2.0.2.13 删除已停止的容器&lt;/h5&gt;
+&lt;h5 id=&#34;删除已停止的容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#删除已停止的容器&#34;&gt;#&lt;/a&gt; 删除已停止的容器&lt;/h5&gt;
 &lt;p&gt;（1）.docker rm 容器 ID&lt;/p&gt;
 &lt;p&gt;（2）.dockers 删除多个容器&lt;/p&gt;
 &lt;p&gt;​        1.docker rm -f (docker ps -a -q)&lt;/p&gt;
 &lt;p&gt;​        2.docker ps -a -q |xagrs docker rm&lt;/p&gt;
-&lt;h5 id=&#34;20214-查看日志&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20214-查看日志&#34;&gt;#&lt;/a&gt; 2.0.2.14 查看日志&lt;/h5&gt;
+&lt;h5 id=&#34;查看日志&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看日志&#34;&gt;#&lt;/a&gt; 查看日志&lt;/h5&gt;
 &lt;p&gt;docker logs 容器 ID&lt;/p&gt;
-&lt;h5 id=&#34;20215-查看容器内运行的进程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20215-查看容器内运行的进程&#34;&gt;#&lt;/a&gt; 2.0.2.15 查看容器内运行的进程&lt;/h5&gt;
+&lt;h5 id=&#34;查看容器内运行的进程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看容器内运行的进程&#34;&gt;#&lt;/a&gt; 查看容器内运行的进程&lt;/h5&gt;
 &lt;p&gt;docker top 容器 ID&lt;/p&gt;
-&lt;h5 id=&#34;20216-重新进入终端&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20216-重新进入终端&#34;&gt;#&lt;/a&gt; 2.0.2.16 重新进入终端&lt;/h5&gt;
+&lt;h5 id=&#34;重新进入终端&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#重新进入终端&#34;&gt;#&lt;/a&gt; 重新进入终端&lt;/h5&gt;
 &lt;p&gt;（1）.docker exec -it 容器 ID /bin/bash  (bash)（推荐使用）&lt;/p&gt;
 &lt;p&gt;exec 是在容器中打开新的终端，并且可以启动新的进程，用 exit 退出不会导致容器的停止。&lt;/p&gt;
 &lt;p&gt;（2）.docker attach 容器 ID&lt;/p&gt;
 &lt;p&gt;attach 直接进入容器启动命令的终端，不会启动新的进程，用 exit 退出会导致容器的停止。&lt;/p&gt;
-&lt;h5 id=&#34;20217-拷贝文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20217-拷贝文件&#34;&gt;#&lt;/a&gt; 2.0.2.17 拷贝文件&lt;/h5&gt;
+&lt;h5 id=&#34;拷贝文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#拷贝文件&#34;&gt;#&lt;/a&gt; 拷贝文件&lt;/h5&gt;
 &lt;p&gt;docker cp 容器 ID: 容器内的路径 目标主机的地址&lt;/p&gt;
-&lt;h5 id=&#34;20218-导入和导出容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20218-导入和导出容器&#34;&gt;#&lt;/a&gt; 2.0.2.18 导入和导出容器&lt;/h5&gt;
+&lt;h5 id=&#34;导入和导出容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#导入和导出容器&#34;&gt;#&lt;/a&gt; 导入和导出容器&lt;/h5&gt;
 &lt;p&gt;导出：docker export 容器 ID &amp;gt; 文件名.tar&lt;/p&gt;
 &lt;p&gt;导入：cat 文件名.tar | docker import - 镜像用户 / 镜像名：镜像版本号&lt;/p&gt;
-&lt;h3 id=&#34;30-docker-镜像&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#30-docker-镜像&#34;&gt;#&lt;/a&gt; 3.0 docker 镜像&lt;/h3&gt;
+&lt;h3 id=&#34;docker-镜像&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker-镜像&#34;&gt;#&lt;/a&gt; docker 镜像&lt;/h3&gt;
 &lt;p&gt;1. 是一种轻量级，可执行的独立软件包，它包含运行某个软件所需要的所有内容，我们把应用程序和配置依赖打包好形成一个可以交付的运行环境 (包括代码，运行时需要的库，环境变量和配置文件等)，这个打包好的运行环境就是 image 的镜像文件&lt;/p&gt;
 &lt;p&gt;只有通过这个镜像文件才能生成 Docker 容器实例（类似 Java 中 new 出来的一个对象)&lt;/p&gt;
 &lt;p&gt;2. 联合文件系统 UnionFS:Union 文件系统（UnionFS）是一种分层，轻量级并且高新能的文件系统，它支持对文件系统的修改作为一次提交来一层层的叠加，同时可以将不同目录挂载到同一个虚拟文件系统下，Union 文件系统是 Docker 镜像的基础。镜像可以通过分层来进行继承，基于基础镜像（没有父镜像），可以制作各种特性：一次同时加载多个文件系统，但从外面看起来，只能看到一个文件系统，联合加载会把各层文件系统叠加起来，这样最终的文件系统会包含所有底层的文件和目录。&lt;/p&gt;
 &lt;p&gt;3.docker 镜像分层最大的一个好处就是为了资源共享，方便复制迁移，就是为了复用。&lt;/p&gt;
 &lt;p&gt;docker commit 提交容器副本使之成为一个新的镜像&lt;/p&gt;
 &lt;p&gt;docker commit -m=“提交的描述信息” -a=“作者” 容器 ID 要创建的目标镜像名：[标签名]&lt;/p&gt;
-&lt;h3 id=&#34;40-docker-容器数据卷&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#40-docker-容器数据卷&#34;&gt;#&lt;/a&gt; 4.0 docker 容器数据卷&lt;/h3&gt;
+&lt;h3 id=&#34;docker-容器数据卷&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker-容器数据卷&#34;&gt;#&lt;/a&gt; docker 容器数据卷&lt;/h3&gt;
 &lt;p&gt;（1）. 是什么？&lt;/p&gt;
 &lt;p&gt;1.Docker 挂载主机目录访问如果出现 cannnot open directory .: Permission denied&lt;/p&gt;
 &lt;p&gt;解决办法：在挂载目录后多加一个–privileged=true 参数即可&lt;/p&gt;
@@ -160,15 +160,15 @@ sudo systemctl restart docke2.r
 &lt;p&gt;4. 容器内只能读不能写 docker run -it --privileged=true -v / 宿主机绝对路径目录:/ 容器内目录:ro 镜像名&lt;/p&gt;
 &lt;p&gt;（4）. 卷的继承和共享&lt;/p&gt;
 &lt;p&gt;1.docker run  -it --privileged=true --volumes-from 父类 --name u2 ubuntu&lt;/p&gt;
-&lt;h3 id=&#34;50-docker-常规软件的安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#50-docker-常规软件的安装&#34;&gt;#&lt;/a&gt; 5.0 docker 常规软件的安装&lt;/h3&gt;
-&lt;h4 id=&#34;501步骤&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#501步骤&#34;&gt;#&lt;/a&gt; 5.0.1. 步骤&lt;/h4&gt;
+&lt;h3 id=&#34;docker-常规软件的安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker-常规软件的安装&#34;&gt;#&lt;/a&gt; docker 常规软件的安装&lt;/h3&gt;
+&lt;h4 id=&#34;步骤&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#步骤&#34;&gt;#&lt;/a&gt; 步骤&lt;/h4&gt;
 &lt;p&gt;（1）. 搜索镜像&lt;/p&gt;
 &lt;p&gt;（2）. 拉取镜像&lt;/p&gt;
 &lt;p&gt;（3）. 查看镜像&lt;/p&gt;
 &lt;p&gt;（4）. 启动镜像&lt;/p&gt;
 &lt;p&gt;（5）. 停止容器&lt;/p&gt;
 &lt;p&gt;（6）. 移除容器&lt;/p&gt;
-&lt;h4 id=&#34;502安装tomcat&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#502安装tomcat&#34;&gt;#&lt;/a&gt; 5.0.2. 安装 tomcat&lt;/h4&gt;
+&lt;h4 id=&#34;安装tomcat&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装tomcat&#34;&gt;#&lt;/a&gt; 安装 tomcat&lt;/h4&gt;
 &lt;p&gt;（1）.docker search tomcat&lt;/p&gt;
 &lt;p&gt;（2）.docker pull tomcat&lt;/p&gt;
 &lt;p&gt;（3）.docker images&lt;/p&gt;
@@ -176,7 +176,7 @@ sudo systemctl restart docke2.r
 &lt;p&gt;（5）. 访问报 404 (1. 没有关闭防火墙，2. 进入 tomcat docker exec -it 容器 ID/bin/bash ，然后 rm -r webapps , 最后 mv webapps.dist webapps）&lt;/p&gt;
 &lt;p&gt;（6）.docker stop 容器 ID&lt;/p&gt;
 &lt;p&gt;（7）.docker rmi 镜像 ID&lt;/p&gt;
-&lt;h4 id=&#34;503安装mysql&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#503安装mysql&#34;&gt;#&lt;/a&gt; 5.0.3. 安装 mysql&lt;/h4&gt;
+&lt;h4 id=&#34;安装mysql&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装mysql&#34;&gt;#&lt;/a&gt; 安装 mysql&lt;/h4&gt;
 &lt;p&gt;（1）.docker search mysql&lt;/p&gt;
 &lt;p&gt;（2）.docker pull mysql:5…7&lt;/p&gt;
 &lt;p&gt;（3）.docker images&lt;/p&gt;
@@ -193,7 +193,7 @@ default_character_set=utf8&lt;br&gt;
 [mysqld]&lt;br&gt;
 collation_server=utf8_general_ci&lt;br&gt;
 character_set_server=utf8&lt;/p&gt;
-&lt;h4 id=&#34;504安装redis&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#504安装redis&#34;&gt;#&lt;/a&gt; 5.0.4 安装 redis&lt;/h4&gt;
+&lt;h4 id=&#34;安装redis&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装redis&#34;&gt;#&lt;/a&gt; 安装 redis&lt;/h4&gt;
 &lt;p&gt;（1）.docker search redis&lt;/p&gt;
 &lt;p&gt;（2）.docker pull mysql:5…7&lt;/p&gt;
 &lt;p&gt;（3）.docker images&lt;/p&gt;
@@ -202,11 +202,11 @@ character_set_server=utf8&lt;/p&gt;
 &lt;p&gt;（6）.redis-cli&lt;/p&gt;
 &lt;p&gt;（7）.docker stop 容器 ID&lt;/p&gt;
 &lt;p&gt;（8）.docker rmi 镜像 ID&lt;/p&gt;
-&lt;h3 id=&#34;60-mysql主从复制&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#60-mysql主从复制&#34;&gt;#&lt;/a&gt; 6.0 mysql 主从复制&lt;/h3&gt;
-&lt;h4 id=&#34;601新建主服务器容器实例3307&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#601新建主服务器容器实例3307&#34;&gt;#&lt;/a&gt; 6.0.1. 新建主服务器容器实例 3307&lt;/h4&gt;
+&lt;h3 id=&#34;mysql主从复制&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#mysql主从复制&#34;&gt;#&lt;/a&gt; mysql 主从复制&lt;/h3&gt;
+&lt;h4 id=&#34;新建主服务器容器实例3307&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#新建主服务器容器实例3307&#34;&gt;#&lt;/a&gt; 新建主服务器容器实例 3307&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;docker run -d -p 3307:3306 --privileged=true -v  /cgcuse/mysql-master/log:/var/log/mysql -v /cgcuse/mysql-master/data:/var/lib/mysql -v  /cgcuse/mysql-master/conf:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=root  --name=mysql-master mysql:5.7
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;602进入-cgcusemysql-masterconf-目录下新建mycnf-vim-mycnf&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#602进入-cgcusemysql-masterconf-目录下新建mycnf-vim-mycnf&#34;&gt;#&lt;/a&gt; 6.0.2. 进入 /cgcuse/mysql-master/conf 目录下新建 my.cnf       vim my.cnf&lt;/h4&gt;
+&lt;h4 id=&#34;进入-cgcusemysql-masterconf-目录下新建mycnf-vim-mycnf&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#进入-cgcusemysql-masterconf-目录下新建mycnf-vim-mycnf&#34;&gt;#&lt;/a&gt; 进入 /cgcuse/mysql-master/conf 目录下新建 my.cnf       vim my.cnf&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;[mysqld]
 ## 设置server_id，同一局域网中需要唯一
 server_id=101 
@@ -224,18 +224,18 @@ expire_logs_days=7
 ## 如：1062错误是指一些主键重复，1032错误是因为主从数据库数据不一致
 slave_skip_errors=1062
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;603修改完配置后重启master实例&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#603修改完配置后重启master实例&#34;&gt;#&lt;/a&gt; 6.0.3. 修改完配置后重启 master 实例&lt;/h4&gt;
+&lt;h4 id=&#34;修改完配置后重启master实例&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#修改完配置后重启master实例&#34;&gt;#&lt;/a&gt; 修改完配置后重启 master 实例&lt;/h4&gt;
 &lt;p&gt;docker restart mysql-master&lt;/p&gt;
-&lt;h4 id=&#34;604进入容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#604进入容器&#34;&gt;#&lt;/a&gt; 6.0.4. 进入容器&lt;/h4&gt;
+&lt;h4 id=&#34;进入容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#进入容器&#34;&gt;#&lt;/a&gt; 进入容器&lt;/h4&gt;
 &lt;p&gt;docker exec -it 容器 ID /bin/bash&lt;/p&gt;
 &lt;p&gt;mysql -uroot -proot&lt;/p&gt;
-&lt;h4 id=&#34;605master容器实例内创建数据同步用户&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#605master容器实例内创建数据同步用户&#34;&gt;#&lt;/a&gt; 6.0.5.master 容器实例内创建数据同步用户&lt;/h4&gt;
+&lt;h4 id=&#34;master容器实例内创建数据同步用户&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#master容器实例内创建数据同步用户&#34;&gt;#&lt;/a&gt; master 容器实例内创建数据同步用户&lt;/h4&gt;
 &lt;p&gt;create user ‘slave’@’%’ identified by ‘123456’;&lt;/p&gt;
 &lt;p&gt;grant replication slave ,replication client on &lt;em&gt;.&lt;/em&gt; to ‘slave’@’%’；&lt;/p&gt;
-&lt;h4 id=&#34;606新建从服务器容器实例3308&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#606新建从服务器容器实例3308&#34;&gt;#&lt;/a&gt; 6.0.6. 新建从服务器容器实例 3308&lt;/h4&gt;
+&lt;h4 id=&#34;新建从服务器容器实例3308&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#新建从服务器容器实例3308&#34;&gt;#&lt;/a&gt; 新建从服务器容器实例 3308&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;docker run -d -p 3308:3306 --privileged=true -v  /cgcuse/mysql-slave/log:/var/log/mysql -v /cgcuse/mysql-slave/data:/var/lib/mysql -v  /cgcuse/mysql-slave/conf:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=root  --name=mysql-slave mysql:5.7
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;607进入-cgcusemysql-slaveconf-目录下新建mycnf-vim-mycnf&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#607进入-cgcusemysql-slaveconf-目录下新建mycnf-vim-mycnf&#34;&gt;#&lt;/a&gt; 6.0.7. 进入 /cgcuse/mysql-slave/conf 目录下新建 my.cnf       vim my.cnf&lt;/h4&gt;
+&lt;h4 id=&#34;进入-cgcusemysql-slaveconf-目录下新建mycnf-vim-mycnf&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#进入-cgcusemysql-slaveconf-目录下新建mycnf-vim-mycnf&#34;&gt;#&lt;/a&gt; 进入 /cgcuse/mysql-slave/conf 目录下新建 my.cnf       vim my.cnf&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;[mysqld]
 ## 设置server_id，同一局域网中需要唯一
 server_id=102
@@ -259,13 +259,13 @@ log_slave_updates=1
 ## slave设置为只读（具有super权限的用户除外）
 read_only=1
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;608修改完配置后重启slave实例&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#608修改完配置后重启slave实例&#34;&gt;#&lt;/a&gt; 6.0.8. 修改完配置后重启 slave 实例&lt;/h4&gt;
+&lt;h4 id=&#34;修改完配置后重启slave实例&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#修改完配置后重启slave实例&#34;&gt;#&lt;/a&gt; 修改完配置后重启 slave 实例&lt;/h4&gt;
 &lt;p&gt;docker restart mysql-slave&lt;/p&gt;
-&lt;h4 id=&#34;609在主数据库中查看主从同步状态&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#609在主数据库中查看主从同步状态&#34;&gt;#&lt;/a&gt; 6.0.9. 在主数据库中查看主从同步状态&lt;/h4&gt;
+&lt;h4 id=&#34;在主数据库中查看主从同步状态&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#在主数据库中查看主从同步状态&#34;&gt;#&lt;/a&gt; 在主数据库中查看主从同步状态&lt;/h4&gt;
 &lt;p&gt;show master status;&lt;/p&gt;
-&lt;h4 id=&#34;6010进入mysql-slave容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6010进入mysql-slave容器&#34;&gt;#&lt;/a&gt; 6.0.10. 进入 mysql-slave 容器&lt;/h4&gt;
+&lt;h4 id=&#34;进入mysql-slave容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#进入mysql-slave容器&#34;&gt;#&lt;/a&gt; 进入 mysql-slave 容器&lt;/h4&gt;
 &lt;p&gt;docker exec -it 容器 ID  /bin/bash&lt;/p&gt;
-&lt;h4 id=&#34;6011在数据库中配置主从复制&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6011在数据库中配置主从复制&#34;&gt;#&lt;/a&gt; 6.0.11. 在数据库中配置主从复制&lt;/h4&gt;
+&lt;h4 id=&#34;在数据库中配置主从复制&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#在数据库中配置主从复制&#34;&gt;#&lt;/a&gt; 在数据库中配置主从复制&lt;/h4&gt;
 &lt;p&gt;change master to master_host=‘宿主机 ip’, master_user=‘slave’, master_password=‘123456’, master_port=3307, master_log_file=‘mall-mysql-bin.000001’, master_log_pos=617, master_connect_retry=30;&lt;/p&gt;
 &lt;p&gt;master_host：主数据库的 IP 地址；&lt;/p&gt;
 &lt;p&gt;master_port：主数据库的运行端口；&lt;/p&gt;
@@ -274,22 +274,22 @@ read_only=1
 &lt;p&gt;master_log_file：指定从数据库要复制数据的日志文件，通过查看主数据的状态，获取 File 参数；&lt;/p&gt;
 &lt;p&gt;master_log_pos：指定从数据库从哪个位置开始复制数据，通过查看主数据的状态，获取 Position 参数；&lt;/p&gt;
 &lt;p&gt;master_connect_retry：连接失败重试的时间间隔，单位为秒。&lt;/p&gt;
-&lt;h4 id=&#34;6012在从数据库中查看主从同步状态&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6012在从数据库中查看主从同步状态&#34;&gt;#&lt;/a&gt; 6.0.12. 在从数据库中查看主从同步状态&lt;/h4&gt;
+&lt;h4 id=&#34;在从数据库中查看主从同步状态&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#在从数据库中查看主从同步状态&#34;&gt;#&lt;/a&gt; 在从数据库中查看主从同步状态&lt;/h4&gt;
 &lt;p&gt;show slave status \G;&lt;/p&gt;
-&lt;h4 id=&#34;6013在从数据库中开启主从同步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6013在从数据库中开启主从同步&#34;&gt;#&lt;/a&gt; 6.0.13. 在从数据库中开启主从同步&lt;/h4&gt;
+&lt;h4 id=&#34;在从数据库中开启主从同步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#在从数据库中开启主从同步&#34;&gt;#&lt;/a&gt; 在从数据库中开启主从同步&lt;/h4&gt;
 &lt;p&gt;start slave;&lt;/p&gt;
-&lt;h4 id=&#34;6014查看从数据库状态发现已经同步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6014查看从数据库状态发现已经同步&#34;&gt;#&lt;/a&gt; 6.0.14. 查看从数据库状态发现已经同步&lt;/h4&gt;
+&lt;h4 id=&#34;查看从数据库状态发现已经同步&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看从数据库状态发现已经同步&#34;&gt;#&lt;/a&gt; 查看从数据库状态发现已经同步&lt;/h4&gt;
 &lt;p&gt;show slave status \G;&lt;/p&gt;
-&lt;h4 id=&#34;6015主从复制测试&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6015主从复制测试&#34;&gt;#&lt;/a&gt; 6.0.15. 主从复制测试&lt;/h4&gt;
+&lt;h4 id=&#34;主从复制测试&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#主从复制测试&#34;&gt;#&lt;/a&gt; 主从复制测试&lt;/h4&gt;
 &lt;p&gt;navicate 连接主库添加，从库查看或者命令添加；&lt;/p&gt;
-&lt;h3 id=&#34;70分布式存储&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#70分布式存储&#34;&gt;#&lt;/a&gt; 7.0. 分布式存储&lt;/h3&gt;
-&lt;h4 id=&#34;701哈希取余算法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#701哈希取余算法&#34;&gt;#&lt;/a&gt; 7.0.1. 哈希取余算法&lt;/h4&gt;
+&lt;h3 id=&#34;分布式存储&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#分布式存储&#34;&gt;#&lt;/a&gt; 分布式存储&lt;/h3&gt;
+&lt;h4 id=&#34;哈希取余算法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#哈希取余算法&#34;&gt;#&lt;/a&gt; 哈希取余算法&lt;/h4&gt;
 &lt;p&gt;2 亿条记录就是 2 亿个 k，v，我们单机不行必须要分布式多机，假设有 3 台机器构成一个集群，用户每次读写操作都是根据公式；&lt;/p&gt;
 &lt;p&gt;hash (key)% N 个机器台数，计算出哈希值，用来决定数据映射到哪一个结点上；&lt;/p&gt;
 &lt;p&gt;优点：简单粗暴，直接有效，只需要预估好数据规划好节点，列如 3 台，8 台，10 台，就能保证一段时间的数据支撑，使用 Hash 算法让固定的一部分请求落到同一台服务器上，这样每台服务器固定处理一部分请求（并且维护这些请求信息）, 起到负载均衡 + 分而治之的作用；&lt;/p&gt;
 &lt;p&gt;缺点：原来规划好的节点，进行扩容或者缩容就比较麻烦了额，不管扩缩，每次数据变动导致节点有变动，映射关系需要重新进行计算，在服务器个数固定不变时没有问题，如果需要弹性扩容或故障停机的情况下，原来的取模公式就会发生变化：Hash (key)/3 会变成 Hash (key) /?。此时地址经过取余运算的结果将发生很大变化，根据公式获取的服务器也会变得不可控。&lt;/p&gt;
 &lt;p&gt;某个 redis 机器宕机了，由于台数数量变化，会导致 hash 取余全部数据重新洗牌。&lt;/p&gt;
-&lt;h4 id=&#34;702一致性哈希算法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#702一致性哈希算法&#34;&gt;#&lt;/a&gt; 7.0.2. 一致性哈希算法&lt;/h4&gt;
+&lt;h4 id=&#34;一致性哈希算法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一致性哈希算法&#34;&gt;#&lt;/a&gt; 一致性哈希算法&lt;/h4&gt;
 &lt;p&gt;1. 目标是为了解决分布式缓存数据变动和映射问题，某个机器宕机了，分母数量改变了，自然取余数不 OK 了。&lt;/p&gt;
 &lt;p&gt;步骤:&lt;/p&gt;
 &lt;p&gt;(1). 算法构建一致性哈希环：&lt;/p&gt;
@@ -316,7 +316,7 @@ read_only=1
 &lt;p&gt;加入和删除节点只影响哈希环中顺时针方向的相邻的节点，对其他节点无影响。&lt;/p&gt;
 &lt;p&gt;缺点&lt;/p&gt;
 &lt;p&gt;数据的分布和节点的位置有关，因为这些节点不是均匀的分布在哈希环上的，所以数据在进行存储时达不到均匀分布的效果。&lt;/p&gt;
-&lt;h4 id=&#34;703哈希槽算法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#703哈希槽算法&#34;&gt;#&lt;/a&gt; 7.0.3. 哈希槽算法&lt;/h4&gt;
+&lt;h4 id=&#34;哈希槽算法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#哈希槽算法&#34;&gt;#&lt;/a&gt; 哈希槽算法&lt;/h4&gt;
 &lt;p&gt;1. 是什么？&lt;/p&gt;
 &lt;p&gt;哈希槽实质就是一个数组，数组 [0,2^14 -1] 形成 hash slot 空间。&lt;/p&gt;
 &lt;p&gt;2. 可以干什么？&lt;/p&gt;
@@ -327,8 +327,8 @@ read_only=1
 &lt;p&gt;一个集群只能有 16384 个槽，编号 0-16383（0-2^14-1）。这些槽会分配给集群中的所有主节点，分配策略没有要求。可以指定哪些编号的槽分配给哪个主节点。集群会记录节点和槽的对应关系。解决了节点和槽的关系后，接下来就需要对 key 求哈希值，然后对 16384 取余，余数是几 key 就落入对应的槽里。slot = CRC16 (key) % 16384。以槽为单位移动数据，因为槽的数目是固定的，处理起来比较容易，这样数据移动问题就解决了。&lt;/p&gt;
 &lt;p&gt;4. 计算&lt;/p&gt;
 &lt;p&gt;Redis 集群中内置了 16384 个哈希槽，redis 会根据节点数量大致均等的将哈希槽映射到不同的节点。当需要在 Redis 集群中放置一个 key-value 时，redis 先对 key 使用 crc16 算法算出一个结果，然后把结果对 16384 求余数，这样每个 key 都会对应一个编号在 0-16383 之间的哈希槽，也就是映射到某个节点上。如下代码，key 之 A 、B 在 Node2， key 之 C 落在 Node3 上&lt;/p&gt;
-&lt;h3 id=&#34;80-redis-3主3从集群&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#80-redis-3主3从集群&#34;&gt;#&lt;/a&gt; 8.0 Redis 3 主 3 从集群&lt;/h3&gt;
-&lt;h4 id=&#34;801-3主3从redis集群配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#801-3主3从redis集群配置&#34;&gt;#&lt;/a&gt; 8.0.1 3 主 3 从 redis 集群配置&lt;/h4&gt;
+&lt;h3 id=&#34;redis-3主3从集群&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#redis-3主3从集群&#34;&gt;#&lt;/a&gt; Redis 3 主 3 从集群&lt;/h3&gt;
+&lt;h4 id=&#34;3主3从redis集群配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3主3从redis集群配置&#34;&gt;#&lt;/a&gt; 3 主 3 从 redis 集群配置&lt;/h4&gt;
 &lt;p&gt;1. 关闭防火墙 + 启动 docker 后台服务、&lt;/p&gt;
 &lt;p&gt;（1）. systemctl start docker&lt;/p&gt;
 &lt;p&gt;2. 新建 6 个 docker 容器实例&lt;/p&gt;
@@ -356,7 +356,7 @@ docker run -d --name redis-node-6 --net host --privileged=true -v /data/redis/sh
 &lt;p&gt;（1）.redis-cli -p 6381&lt;/p&gt;
 &lt;p&gt;（2）.cluster info&lt;/p&gt;
 &lt;p&gt;（3）.cluster nodes&lt;/p&gt;
-&lt;h4 id=&#34;802-3从容错切换迁移案例&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#802-3从容错切换迁移案例&#34;&gt;#&lt;/a&gt; 8.0.2 3 从容错切换迁移案例&lt;/h4&gt;
+&lt;h4 id=&#34;3从容错切换迁移案例&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3从容错切换迁移案例&#34;&gt;#&lt;/a&gt; 3 从容错切换迁移案例&lt;/h4&gt;
 &lt;p&gt;1. 数据读写存储&lt;/p&gt;
 &lt;p&gt;（1）. 启动 6 机构成的集群并且使用 exec 进入&lt;/p&gt;
 &lt;p&gt;（2）. 对 6381 新增两个 key&lt;/p&gt;
@@ -379,7 +379,7 @@ docker run -d --name redis-node-6 --net host --privileged=true -v /data/redis/sh
 &lt;p&gt;docker start redis-node-5&lt;/p&gt;
 &lt;p&gt;（4）. 查看集群状态&lt;/p&gt;
 &lt;p&gt;redis-cli --cluster check 1.15.175.46:6381&lt;/p&gt;
-&lt;h4 id=&#34;803-3从扩容案例&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#803-3从扩容案例&#34;&gt;#&lt;/a&gt; 8.0.3 3 从扩容案例&lt;/h4&gt;
+&lt;h4 id=&#34;3从扩容案例&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3从扩容案例&#34;&gt;#&lt;/a&gt; 3 从扩容案例&lt;/h4&gt;
 &lt;p&gt;1. 新建 6387，6388 两个节点 + 新建后启动 + 查看是否 8 节点&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run -d --name redis-node-7 --net host --privileged=true -v /data/redis/share/redis-node-7:/data redis:6.0.8 --cluster-enabled yes --appendonly yes --port 6387
 
@@ -403,7 +403,7 @@ docker ps
 &lt;p&gt;redis-cli --cluster add-node  1.15.175.46:6388  1.15.175.46:6387 --cluster-slave --cluster-master-id e4781f644d4a4e4d4b4d107157b9ba8144631451------- 这个是 6387 的编号，按照自己实际情况&lt;/p&gt;
 &lt;p&gt;8. 检查集群情况第三次&lt;/p&gt;
 &lt;p&gt;redis-cli --cluster check 真实 ip 地址：6388&lt;/p&gt;
-&lt;h4 id=&#34;804-3从缩容案例&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#804-3从缩容案例&#34;&gt;#&lt;/a&gt; 8.0.4 3 从缩容案例&lt;/h4&gt;
+&lt;h4 id=&#34;3从缩容案例&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3从缩容案例&#34;&gt;#&lt;/a&gt; 3 从缩容案例&lt;/h4&gt;
 &lt;p&gt;1. 下线 6387，6388 两个节点&lt;/p&gt;
 &lt;p&gt;2. 检查集群情况 1 获得 6388 的节点 ID&lt;/p&gt;
 &lt;p&gt;redis-cli --cluster check 真实 ip 地址：6388&lt;/p&gt;
@@ -418,8 +418,8 @@ docker ps
 &lt;p&gt;redis-cli --cluster del-node 1.15.175.46:6387 5d149074b7e57b802287d1797a874ed7a1a284a8&lt;/p&gt;
 &lt;p&gt;7. 检查集群情况第三次&lt;/p&gt;
 &lt;p&gt;redis-cli --cluster check 真实 ip 地址：6381&lt;/p&gt;
-&lt;h3 id=&#34;90-dockerfile&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#90-dockerfile&#34;&gt;#&lt;/a&gt; 9.0 DockerFile&lt;/h3&gt;
-&lt;h4 id=&#34;901dockerfile构建过程解析&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#901dockerfile构建过程解析&#34;&gt;#&lt;/a&gt; 9.0.1dockerfile 构建过程解析&lt;/h4&gt;
+&lt;h3 id=&#34;dockerfile&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#dockerfile&#34;&gt;#&lt;/a&gt; DockerFile&lt;/h3&gt;
+&lt;h4 id=&#34;dockerfile构建过程解析&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#dockerfile构建过程解析&#34;&gt;#&lt;/a&gt; dockerfile 构建过程解析&lt;/h4&gt;
 &lt;p&gt;1.Dockerfile 是用来构建 Docker 镜像的文本文件，是由一条条构建镜像所需的指令和参数构成的脚本。&lt;/p&gt;
 &lt;p&gt;2. 构建过程&lt;/p&gt;
 &lt;p&gt;（1）. 编写 Dockerfile 文件&lt;/p&gt;
@@ -436,7 +436,7 @@ docker ps
 &lt;p&gt;（3）. 执行类似 docker commit 的操作提交一个新的镜像层&lt;/p&gt;
 &lt;p&gt;（4）.docker 再基于刚提交的镜像运行一个新的容器&lt;/p&gt;
 &lt;p&gt;（5）. 执行 dockerfile 中的下一条指令直到所有指令都执行完成&lt;/p&gt;
-&lt;h4 id=&#34;902-dockerfile常用保留字指令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#902-dockerfile常用保留字指令&#34;&gt;#&lt;/a&gt; 9.0.2 DockerFile 常用保留字指令&lt;/h4&gt;
+&lt;h4 id=&#34;dockerfile常用保留字指令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#dockerfile常用保留字指令&#34;&gt;#&lt;/a&gt; DockerFile 常用保留字指令&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;FROM&lt;/strong&gt; : 基础镜像当前新镜像是基于哪个镜像的，指定一个已经存在的镜像作为模板，第一条必须是 from&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;MAINTAINER&lt;/strong&gt; : 镜像维护者的姓名和邮箱地址&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;RUN&lt;/strong&gt; ：&lt;/p&gt;
@@ -460,7 +460,7 @@ docker ps
 &lt;p&gt;1.RUN 是在 docker build 时运行&lt;/p&gt;
 &lt;p&gt;2.CMD 是在 docker run 时运行&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ENTRYPOINT&lt;/strong&gt;: 指定一个容器启动时要运行的命令，类似 CMD 但是不会被 docker run 之后的参数替换。&lt;/p&gt;
-&lt;h4 id=&#34;903案例&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#903案例&#34;&gt;#&lt;/a&gt; 9.0.3 案例&lt;/h4&gt;
+&lt;h4 id=&#34;案例&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#案例&#34;&gt;#&lt;/a&gt; 案例&lt;/h4&gt;
 &lt;p&gt;自定义镜像 mycentosjava8（具备 jdk8，ifconfig，vim）&lt;/p&gt;
 &lt;p&gt;下载 jdk 文件到 myfile 下&lt;/p&gt;
 &lt;p&gt;vim Dockerfile&lt;/p&gt;
@@ -494,7 +494,7 @@ CMD /bin/bash
 &lt;p&gt;构建&lt;/p&gt;
 &lt;p&gt;docker build -t 新镜像名字:tag .&lt;/p&gt;
 &lt;p&gt;docker image prune 删除虚悬镜像&lt;/p&gt;
-&lt;h4 id=&#34;904-微服务实战&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#904-微服务实战&#34;&gt;#&lt;/a&gt; 9.0.4 微服务实战&lt;/h4&gt;
+&lt;h4 id=&#34;微服务实战&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#微服务实战&#34;&gt;#&lt;/a&gt; 微服务实战&lt;/h4&gt;
 &lt;p&gt;1. 新建一个 springboot 微服务项目&lt;/p&gt;
 &lt;p&gt;2. 搞定微服务 jar 包&lt;/p&gt;
 &lt;p&gt;3.jar 包和 Dockerfile 放在同一个路径下&lt;/p&gt;
@@ -516,8 +516,8 @@ EXPOSE 6001
 &lt;p&gt;5. 运行容器&lt;/p&gt;
 &lt;p&gt;docker run -itd  -p 6001:6001 容器 ID&lt;/p&gt;
 &lt;p&gt;6. 测试&lt;/p&gt;
-&lt;h3 id=&#34;100-docker网络&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#100-docker网络&#34;&gt;#&lt;/a&gt; 10.0 Docker 网络&lt;/h3&gt;
-&lt;h4 id=&#34;1001常用命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1001常用命令&#34;&gt;#&lt;/a&gt; 10.0.1 常用命令&lt;/h4&gt;
+&lt;h3 id=&#34;docker网络&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker网络&#34;&gt;#&lt;/a&gt; Docker 网络&lt;/h3&gt;
+&lt;h4 id=&#34;常用命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常用命令&#34;&gt;#&lt;/a&gt; 常用命令&lt;/h4&gt;
 &lt;p&gt;1. 查看 docker 网络模式命令&lt;/p&gt;
 &lt;p&gt;docker network ls&lt;/p&gt;
 &lt;p&gt;2. 查看所有命令&lt;/p&gt;
@@ -528,16 +528,16 @@ EXPOSE 6001
 &lt;p&gt;docker network rm xxx 网络名字&lt;/p&gt;
 &lt;p&gt;5. 创建网络&lt;/p&gt;
 &lt;p&gt;docker network create 网络名字&lt;/p&gt;
-&lt;h4 id=&#34;1002-作用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1002-作用&#34;&gt;#&lt;/a&gt; 10.0.2 作用&lt;/h4&gt;
+&lt;h4 id=&#34;作用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#作用&#34;&gt;#&lt;/a&gt; 作用&lt;/h4&gt;
 &lt;p&gt;1. 容器的互联和通信以及端口映射&lt;/p&gt;
 &lt;p&gt;2. 容器 IP 变动的时候可以通过服务名直接网络通信而不受到影像&lt;/p&gt;
-&lt;h4 id=&#34;1003-网络模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1003-网络模式&#34;&gt;#&lt;/a&gt; 10.0.3 网络模式&lt;/h4&gt;
+&lt;h4 id=&#34;网络模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#网络模式&#34;&gt;#&lt;/a&gt; 网络模式&lt;/h4&gt;
 &lt;p&gt;1.bridge 模式：使用–network bridge 指定，默认使用 docker0&lt;/p&gt;
 &lt;p&gt;2.host 模式：使用–network host 指定&lt;/p&gt;
 &lt;p&gt;3.none 模式：使用–network none 指定&lt;/p&gt;
 &lt;p&gt;4.container 模式：使用–network container:NAME 或者容器 ID 指定&lt;/p&gt;
 &lt;p&gt;docker 容器内部 ip 时有可能会发生改变的&lt;/p&gt;
-&lt;h5 id=&#34;10031-bridge&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10031-bridge&#34;&gt;#&lt;/a&gt; 10.0.3.1 bridge&lt;/h5&gt;
+&lt;h5 id=&#34;bridge&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#bridge&#34;&gt;#&lt;/a&gt; bridge&lt;/h5&gt;
 &lt;p&gt;Docker 服务默认会创建一个 docker0 网桥（其上有一个 docker0 内部接口），该桥接网络的名称为 docker0，它在内核层连通了其他的物理或虚拟网卡，这就将所有容器和本地主机都放到同一个物理网络。Docker 默认指定了 docker0 接口 的 IP 地址和子网掩码，让主机和容器之间可以通过网桥相互通信。&lt;/p&gt;
 &lt;p&gt;# 查看 bridge 网络的详细信息，并通过 grep 获取名称项&lt;/p&gt;
 &lt;p&gt;docker network inspect bridge | grep name&lt;/p&gt;
@@ -548,19 +548,19 @@ EXPOSE 6001
 &lt;p&gt;3.2 每个容器实例内部也有一块网卡，每个接口叫 eth0；&lt;/p&gt;
 &lt;p&gt;3.3 docker0 上面的每个 veth 匹配某个容器实例内部的 eth0，两两配对，一一匹配。&lt;/p&gt;
 &lt;p&gt;通过上述，将宿主机上的所有容器都连接到这个内部网络上，两个容器在同一个网络下，会从这个网关下各自拿到分配的 ip，此时两个容器的网络是互通的。&lt;/p&gt;
-&lt;h5 id=&#34;10032-host&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10032-host&#34;&gt;#&lt;/a&gt; 10.0.3.2 host&lt;/h5&gt;
+&lt;h5 id=&#34;host&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#host&#34;&gt;#&lt;/a&gt; host&lt;/h5&gt;
 &lt;p&gt;直接使用宿主机的 IP 地址与外界进行通信，不再需要额外进行 NAT 转换。&lt;/p&gt;
 &lt;p&gt;容器将不会获得一个独立的 Network Namespace， 而是和宿主机共用一个 Network Namespace。容器将不会虚拟出自己的网卡而是使用宿主机的 IP 和端口。&lt;/p&gt;
 &lt;p&gt;docker run -d  -p 8083:8083 --network host  --name …&lt;/p&gt;
-&lt;h5 id=&#34;10033-none&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10033-none&#34;&gt;#&lt;/a&gt; 10.0.3.3 none&lt;/h5&gt;
+&lt;h5 id=&#34;none&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#none&#34;&gt;#&lt;/a&gt; none&lt;/h5&gt;
 &lt;p&gt;禁用网络功能只有 lo 标识&lt;/p&gt;
 &lt;p&gt;docker run -d  -p 8083:8083 --network none --name …&lt;/p&gt;
-&lt;h5 id=&#34;10034-container&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10034-container&#34;&gt;#&lt;/a&gt; 10.0.3.4 container&lt;/h5&gt;
+&lt;h5 id=&#34;container&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#container&#34;&gt;#&lt;/a&gt; container&lt;/h5&gt;
 &lt;p&gt;container ⽹络模式&lt;/p&gt;
 &lt;p&gt;新建的容器和已经存在的一个容器共享一个网络 ip 配置而不是和宿主机共享。新创建的容器不会创建自己的网卡，配置自己的 IP，而是和一个指定的容器共享 IP、端口范围等。同样，两个容器除了网络方面，其他的如文件系统、进程列表等还是隔离的。&lt;/p&gt;
 &lt;p&gt;docker run -it --network container:alpine1 --name …&lt;/p&gt;
-&lt;h4 id=&#34;1011-docker-平台架构图解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1011-docker-平台架构图解&#34;&gt;#&lt;/a&gt; 10.1.1 docker 平台架构图解&lt;/h4&gt;
-&lt;h5 id=&#34;10111整体说明&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10111整体说明&#34;&gt;#&lt;/a&gt; 10.1.1.1. 整体说明&lt;/h5&gt;
+&lt;h4 id=&#34;docker-平台架构图解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker-平台架构图解&#34;&gt;#&lt;/a&gt; docker 平台架构图解&lt;/h4&gt;
+&lt;h5 id=&#34;整体说明&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#整体说明&#34;&gt;#&lt;/a&gt; 整体说明&lt;/h5&gt;
 &lt;p&gt;从其架构和运行流程来看，Docker 是一个 C/S 模式的架构，后端是一个松耦合架构，众多模块各司其职。&lt;/p&gt;
 &lt;p&gt;Docker 运行的基本流程为：&lt;/p&gt;
 &lt;p&gt;1 用户是使用 Docker Client 与 Docker Daemon 建立通信，并发送请求给后者。&lt;/p&gt;
@@ -570,31 +570,31 @@ EXPOSE 6001
 &lt;p&gt;5 当需要为 Docker 创建网络环境时，通过网络管理驱动 Network driver 创建并配置 Docker 容器网络环境。&lt;/p&gt;
 &lt;p&gt;6 当需要限制 Docker 容器运行资源或执行用户指令等操作时，则通过 Execdriver 来完成。&lt;/p&gt;
 &lt;p&gt;7 Libcontainer 是一项独立的容器管理包，Network driver 以及 Exec driver 都是通过 Libcontainer 来实现具体对容器进行的操作。&lt;/p&gt;
-&lt;h5 id=&#34;10112整体架构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10112整体架构&#34;&gt;#&lt;/a&gt; 10.1.1.2. 整体架构&lt;/h5&gt;
+&lt;h5 id=&#34;整体架构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#整体架构&#34;&gt;#&lt;/a&gt; 整体架构&lt;/h5&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/jiagou.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;​&lt;/p&gt;
-&lt;h3 id=&#34;110-docker-compose-容器编排&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#110-docker-compose-容器编排&#34;&gt;#&lt;/a&gt; 11.0 Docker-compose 容器编排&lt;/h3&gt;
-&lt;h4 id=&#34;1101-是什么&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1101-是什么&#34;&gt;#&lt;/a&gt; 11.0.1 是什么？&lt;/h4&gt;
+&lt;h3 id=&#34;docker-compose-容器编排&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker-compose-容器编排&#34;&gt;#&lt;/a&gt; Docker-compose 容器编排&lt;/h3&gt;
+&lt;h4 id=&#34;是什么&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#是什么&#34;&gt;#&lt;/a&gt; 是什么？&lt;/h4&gt;
 &lt;p&gt;Docker-Compose 是 Docker 官方的开源项目，负责实现对容器集群的快速编排&lt;/p&gt;
-&lt;h4 id=&#34;1102-能干什么&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1102-能干什么&#34;&gt;#&lt;/a&gt; 11.0.2 能干什么？&lt;/h4&gt;
+&lt;h4 id=&#34;能干什么&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#能干什么&#34;&gt;#&lt;/a&gt; 能干什么？&lt;/h4&gt;
 &lt;p&gt;docker 建议我们每一个容器中只运行一个服务，因为 docker 容器本身占用资源极少，所以最好是将每个服务单独的分割开来但是这样我们又面临了一个问题？&lt;/p&gt;
 &lt;p&gt;如果我需要同时部署好多个服务，难道要每个服务单独写 Dockerfile 然后在构建镜像，构建容器，这样累都累死了，所以 docker 官方给我们提供了 docker-compose 多服务部署的工具&lt;/p&gt;
 &lt;p&gt;例如要实现一个 Web 微服务项目，除了 Web 服务容器本身，往往还需要再加上后端的数据库 mysql 服务容器，redis 服务器，注册中心 eureka，甚至还包括负载均衡容器等等。。。。。。&lt;/p&gt;
 &lt;p&gt;Compose 允许用户通过一个单独的 docker-compose.yml 模板文件（YAML 格式）来定义一组相关联的应用容器为一个项目（project）。&lt;/p&gt;
 &lt;p&gt;可以很容易地用一个配置文件定义一个多容器的应用，然后使用一条指令安装这个应用的所有依赖，完成构建。Docker-Compose 解决了容器与容器之间如何管理编排的问题。&lt;/p&gt;
-&lt;h4 id=&#34;1103-去哪里下载&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1103-去哪里下载&#34;&gt;#&lt;/a&gt; 11.0.3 去哪里下载？&lt;/h4&gt;
+&lt;h4 id=&#34;去哪里下载&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#去哪里下载&#34;&gt;#&lt;/a&gt; 去哪里下载？&lt;/h4&gt;
 &lt;p&gt;下载：&lt;/p&gt;
 &lt;p&gt;1.curl -L “&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2RvY2tlci9jb21wb3NlL3JlbGVhc2VzL2Rvd25sb2FkLzEuMjkuMi9kb2NrZXItY29tcG9zZS0=&#34;&gt;https://github.com/docker/compose/releases/download/1.29.2/docker-compose-&lt;/span&gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;(uname -s)-&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;−&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;s&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;−&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;(uname -m)” -o /usr/local/bin/docker-compose&lt;/p&gt;
 &lt;p&gt;2.chmod +x /usr/local/bin/docker-compose&lt;/p&gt;
 &lt;p&gt;3.docker-compose --version&lt;/p&gt;
 &lt;p&gt;卸载：&lt;/p&gt;
 &lt;p&gt;sudo rm /usr/local/bin/docker-compose&lt;/p&gt;
-&lt;h4 id=&#34;1104-compose核心概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1104-compose核心概念&#34;&gt;#&lt;/a&gt; 11.0.4 Compose 核心概念&lt;/h4&gt;
+&lt;h4 id=&#34;compose核心概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#compose核心概念&#34;&gt;#&lt;/a&gt; Compose 核心概念&lt;/h4&gt;
 &lt;p&gt;1. 一文件 docker-compose.yml&lt;/p&gt;
 &lt;p&gt;2. 两要素&lt;/p&gt;
 &lt;p&gt;（1）. 服务：一个个应用容器实例，比如订单微服务，库存微服务，mysql 容器。&lt;/p&gt;
 &lt;p&gt;（2）. 工程：由一组关联的应用容器组成的一个完整业务单元，在 docker-compose.yml 文件中定义。&lt;/p&gt;
-&lt;h4 id=&#34;1105-compose常用命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1105-compose常用命令&#34;&gt;#&lt;/a&gt; 11.0.5 Compose 常用命令&lt;/h4&gt;
+&lt;h4 id=&#34;compose常用命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#compose常用命令&#34;&gt;#&lt;/a&gt; Compose 常用命令&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Compose**** 常用命令&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;docker-compose -h              # 查看帮助&lt;/p&gt;
 &lt;p&gt;docker-compose up              # 启动所有 docker-compose 服务&lt;/p&gt;
@@ -609,11 +609,11 @@ EXPOSE 6001
 &lt;p&gt;docker-compose restart  # 重启服务&lt;/p&gt;
 &lt;p&gt;docker-compose start   # 启动服务&lt;/p&gt;
 &lt;p&gt;docker-compose stop    # 停止服务&lt;/p&gt;
-&lt;h4 id=&#34;1106-compose使用的三个步骤&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1106-compose使用的三个步骤&#34;&gt;#&lt;/a&gt; 11.0.6 Compose 使用的三个步骤&lt;/h4&gt;
+&lt;h4 id=&#34;compose使用的三个步骤&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#compose使用的三个步骤&#34;&gt;#&lt;/a&gt; Compose 使用的三个步骤&lt;/h4&gt;
 &lt;p&gt;1. 编写 Dockerfile 定义各个微服务应用并构建出对应的镜像文件&lt;/p&gt;
 &lt;p&gt;2. 使用 docker-compose.yml 定义一个完整业务单元，安排好整体应用中的各个容器服务&lt;/p&gt;
 &lt;p&gt;3. 最后执行 docker-compose up 命令并启动运行整个应用程序，完成一键部署上线&lt;/p&gt;
-&lt;h4 id=&#34;1107-compose编排微服务&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1107-compose编排微服务&#34;&gt;#&lt;/a&gt; 11.0.7 Compose 编排微服务&lt;/h4&gt;
+&lt;h4 id=&#34;compose编排微服务&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#compose编排微服务&#34;&gt;#&lt;/a&gt; Compose 编排微服务&lt;/h4&gt;
 &lt;p&gt;1.package 把项目打包，放在与 docker-compose.yml 和 Dockerfile 同个目录下&lt;/p&gt;
 &lt;p&gt;2. 编写 docker-compose.yml 文件&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;version: &amp;quot;3&amp;quot;
@@ -678,7 +678,7 @@ EXPOSE 6001
 &lt;p&gt;4.docker build -t zzyy_docker:1.6 .&lt;/p&gt;
 &lt;p&gt;5. 执行 docker-compose up 或者 docker-compose up -d&lt;/p&gt;
 &lt;p&gt;6. 关闭 docker-compose stop&lt;/p&gt;
-&lt;h3 id=&#34;130-docker-轻量级可视化工具portainer&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#130-docker-轻量级可视化工具portainer&#34;&gt;#&lt;/a&gt; 13.0 Docker 轻量级可视化工具 Portainer&lt;/h3&gt;
+&lt;h3 id=&#34;docker-轻量级可视化工具portainer&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker-轻量级可视化工具portainer&#34;&gt;#&lt;/a&gt; Docker 轻量级可视化工具 Portainer&lt;/h3&gt;
 &lt;p&gt;1. 是什么？&lt;/p&gt;
 &lt;p&gt;Portainer 是一款轻量级的应用，它提供了图形化界面，用于方便地管理 Docker 环境，包括单机环境和集群环境。&lt;/p&gt;
 &lt;p&gt;2. 安装&lt;/p&gt;
@@ -686,7 +686,7 @@ EXPOSE 6001
 &lt;p&gt;docker run -d -p 8000:8000 -p 9000:9000 --name portainer   --restart=always   -v /var/run/docker.sock:/var/run/docker.sock   -v portainer_data:/data   portainer/portainer&lt;/p&gt;
 &lt;p&gt;（2）. 设置账号密码&lt;/p&gt;
 &lt;p&gt;（3）. 地址 ip:9000&lt;/p&gt;
-&lt;h3 id=&#34;140-docker-容器监控之cadvisorinfluxdbgranfana&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#140-docker-容器监控之cadvisorinfluxdbgranfana&#34;&gt;#&lt;/a&gt; 14.0 Docker 容器监控之 CAdvisor+InfluxDB+Granfana&lt;/h3&gt;
+&lt;h3 id=&#34;docker-容器监控之cadvisorinfluxdbgranfana&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker-容器监控之cadvisorinfluxdbgranfana&#34;&gt;#&lt;/a&gt; Docker 容器监控之 CAdvisor+InfluxDB+Granfana&lt;/h3&gt;
 &lt;p&gt;1. 监控&lt;/p&gt;
 &lt;p&gt;docker stats&lt;/p&gt;
 &lt;p&gt;2.CAdvisor+InfluxDB+Granfana&lt;/p&gt;

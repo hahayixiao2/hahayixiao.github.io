@@ -110,12 +110,12 @@ HaHaYiXiao = 一个小萌新的进阶之路</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeubcbajj20zk0m8h1h.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipexoj0moj20zk0m8kgu.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipey84bjtj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeudstjqj20zk0m8k3r.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
         </ul>
       </div>
     </header>
@@ -165,10 +165,10 @@ HaHaYiXiao = 一个小萌新的进阶之路</title>
     
 
     <h2 id="docker"><a class="markdownIt-Anchor" href="#docker">#</a> docker</h2>
-<h3 id="10-docker-安装步骤"><a class="markdownIt-Anchor" href="#10-docker-安装步骤">#</a> 1.0 docker 安装步骤</h3>
+<h3 id="docker-安装步骤"><a class="markdownIt-Anchor" href="#docker-安装步骤">#</a> docker 安装步骤</h3>
 <p><img data-src="https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/%E5%AE%89%E8%A3%85%E6%B5%81%E7%A8%8B.png" alt="安装流程"></p>
 <p>运行 docker run hello-world 能出现这个说明 docker 已经安装成功了！</p>
-<h4 id="101-docker-配置阿里云加速"><a class="markdownIt-Anchor" href="#101-docker-配置阿里云加速">#</a> 1.0.1 docker 配置阿里云加速</h4>
+<h4 id="docker-配置阿里云加速"><a class="markdownIt-Anchor" href="#docker-配置阿里云加速">#</a> docker 配置阿里云加速</h4>
 <p>登录阿里云 -&gt; 选择容器镜像服务 -&gt; 选择镜像加速器</p>
 <p>共有 ubuntu，centos，mac，windows 版本</p>
 <p>centos 配置</p>
@@ -181,8 +181,8 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docke2.r
 </code></pre>
-<h3 id="20-docker常用命令"><a class="markdownIt-Anchor" href="#20-docker常用命令">#</a> 2.0 docker 常用命令</h3>
-<h4 id="201-帮助启动类命令"><a class="markdownIt-Anchor" href="#201-帮助启动类命令">#</a> 2.0.1 帮助启动类命令</h4>
+<h3 id="docker常用命令"><a class="markdownIt-Anchor" href="#docker常用命令">#</a> docker 常用命令</h3>
+<h4 id="帮助启动类命令"><a class="markdownIt-Anchor" href="#帮助启动类命令">#</a> 帮助启动类命令</h4>
 <pre><code>1. 启动docker ：systemctl start docker
 2. 停止docker ：systemctl stop docker
 3. 重启docker：systemctl restart docker
@@ -192,8 +192,8 @@ sudo systemctl restart docke2.r
 7. 查看docker总体帮助文档：docker --help
 8. 查看docker命令帮助文档：docker具体命令 --help
 </code></pre>
-<h4 id="202-镜像命令"><a class="markdownIt-Anchor" href="#202-镜像命令">#</a> 2.0.2 镜像命令</h4>
-<h5 id="2021-显示已有镜像"><a class="markdownIt-Anchor" href="#2021-显示已有镜像">#</a> 2.0.2.1 显示已有镜像</h5>
+<h4 id="镜像命令"><a class="markdownIt-Anchor" href="#镜像命令">#</a> 镜像命令</h4>
+<h5 id="显示已有镜像"><a class="markdownIt-Anchor" href="#显示已有镜像">#</a> 显示已有镜像</h5>
 <p>列出本地主机上面的镜像</p>
 <p><img data-src="https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/images.jpg" alt=""></p>
 <p>如图所示：</p>
@@ -208,7 +208,7 @@ sudo systemctl restart docke2.r
 <li>-a：列出本地的所有镜像 (含历史)</li>
 <li>-q：只显示镜像 ID</li>
 </ol>
-<h5 id="2022-从仓库查找镜像"><a class="markdownIt-Anchor" href="#2022-从仓库查找镜像">#</a> 2.0.2.2 从仓库查找镜像</h5>
+<h5 id="从仓库查找镜像"><a class="markdownIt-Anchor" href="#从仓库查找镜像">#</a> 从仓库查找镜像</h5>
 <p><img data-src="https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/search.jpg" alt=""></p>
 <p>NAME：镜像名称</p>
 <p>DESCRIPTION: 镜像说明</p>
@@ -217,21 +217,21 @@ sudo systemctl restart docke2.r
 <p>AUTOMATED: 是否是自动构建的</p>
 <p>-option 操作说明：</p>
 <p>–limit ：只列出 N 个镜像，默认 25 个 （docker search --limit 5 redis）</p>
-<h5 id="2023-下载镜像"><a class="markdownIt-Anchor" href="#2023-下载镜像">#</a> 2.0.2.3 下载镜像</h5>
+<h5 id="下载镜像"><a class="markdownIt-Anchor" href="#下载镜像">#</a> 下载镜像</h5>
 <p><img data-src="https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/pull.png" alt=""></p>
 <p>下载镜像</p>
 <p>1.docker pull 镜像名字 [:TAG]</p>
 <p>2.docker pull 镜像名字</p>
 <p>(1). 没有 TAG 就是最新版 = docker pull 镜像名字:latest</p>
-<h5 id="2024-查看docker资源占用情况"><a class="markdownIt-Anchor" href="#2024-查看docker资源占用情况">#</a> 2.0.2.4 查看 docker 资源占用情况</h5>
+<h5 id="查看docker资源占用情况"><a class="markdownIt-Anchor" href="#查看docker资源占用情况">#</a> 查看 docker 资源占用情况</h5>
 <p>docker system df</p>
 <p><img data-src="https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/df.png" alt=""></p>
-<h5 id="2025-删除镜像"><a class="markdownIt-Anchor" href="#2025-删除镜像">#</a> 2.0.2.5  删除镜像</h5>
+<h5 id="删除镜像"><a class="markdownIt-Anchor" href="#删除镜像">#</a> 删除镜像</h5>
 <p><img data-src="https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/rmi.png" alt=""></p>
 <p>1.docker rmi -f 镜像 id（删除单个)</p>
 <p>2.docker rmi -f 镜像名 1:tag 镜像名 2:tag (删除多个)</p>
 <p>3.docker rmi -f $(docker images -qa) （删除全部）</p>
-<h5 id="2026-启动交互式容器"><a class="markdownIt-Anchor" href="#2026-启动交互式容器">#</a> 2.0.2.6 启动交互式容器</h5>
+<h5 id="启动交互式容器"><a class="markdownIt-Anchor" href="#启动交互式容器">#</a> 启动交互式容器</h5>
 <p>docker run（前台命令行）</p>
 <p>–name =“容器的新名字”</p>
 <p>-d：后台运行容器并且返回容器 id，也即启动守护式容器（后台运行）；</p>
@@ -240,50 +240,50 @@ sudo systemctl restart docke2.r
 <p>-P：随机端口映射，大写 P</p>
 <p>-p：指定端口映射，小写 p</p>
 <p><img data-src="https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/run.png" alt="image-20220201150011636"></p>
-<h5 id="2027-查看容器"><a class="markdownIt-Anchor" href="#2027-查看容器">#</a> 2.0.2.7 查看容器</h5>
+<h5 id="查看容器"><a class="markdownIt-Anchor" href="#查看容器">#</a> 查看容器</h5>
 <p>docker ps</p>
 <p>-a: 列出所有正在运行的容器</p>
 <p>-l：显示最近创建的容器</p>
 <p>-n: 显示最近 n 个创建的容器</p>
 <p>-q：静默模式，只显示容器编号</p>
-<h5 id="2028-退出容器"><a class="markdownIt-Anchor" href="#2028-退出容器">#</a> 2.0.2.8 退出容器</h5>
+<h5 id="退出容器"><a class="markdownIt-Anchor" href="#退出容器">#</a> 退出容器</h5>
 <p>（1）.exit： run 进去容器，exit 退出，容器停止</p>
 <p>（2）.ctrl+p+q run 进去容器，ctrl+p+q 退出，容器不停止</p>
-<h5 id="2029-启动容器"><a class="markdownIt-Anchor" href="#2029-启动容器">#</a> 2.0.2.9 启动容器</h5>
+<h5 id="启动容器"><a class="markdownIt-Anchor" href="#启动容器">#</a> 启动容器</h5>
 <p>（1）.docker start 容器 ID 或者容器名</p>
-<h5 id="20210-停止容器"><a class="markdownIt-Anchor" href="#20210-停止容器">#</a> 2.0.2.10 停止容器</h5>
+<h5 id="停止容器"><a class="markdownIt-Anchor" href="#停止容器">#</a> 停止容器</h5>
 <p>（1）.docker stop 容器 ID 或者容器名</p>
-<h5 id="20211-重启容器"><a class="markdownIt-Anchor" href="#20211-重启容器">#</a> 2.0.2.11 重启容器</h5>
+<h5 id="重启容器"><a class="markdownIt-Anchor" href="#重启容器">#</a> 重启容器</h5>
 <p>（1）.docker restart 容器 ID 或者容器名</p>
-<h5 id="20212-强制停止容器"><a class="markdownIt-Anchor" href="#20212-强制停止容器">#</a> 2.0.2.12 强制停止容器</h5>
+<h5 id="强制停止容器"><a class="markdownIt-Anchor" href="#强制停止容器">#</a> 强制停止容器</h5>
 <p>（1）.docker kill 容器 ID 或者容器名</p>
-<h5 id="20213-删除已停止的容器"><a class="markdownIt-Anchor" href="#20213-删除已停止的容器">#</a> 2.0.2.13 删除已停止的容器</h5>
+<h5 id="删除已停止的容器"><a class="markdownIt-Anchor" href="#删除已停止的容器">#</a> 删除已停止的容器</h5>
 <p>（1）.docker rm 容器 ID</p>
 <p>（2）.dockers 删除多个容器</p>
 <p>​        1.docker rm -f (docker ps -a -q)</p>
 <p>​        2.docker ps -a -q |xagrs docker rm</p>
-<h5 id="20214-查看日志"><a class="markdownIt-Anchor" href="#20214-查看日志">#</a> 2.0.2.14 查看日志</h5>
+<h5 id="查看日志"><a class="markdownIt-Anchor" href="#查看日志">#</a> 查看日志</h5>
 <p>docker logs 容器 ID</p>
-<h5 id="20215-查看容器内运行的进程"><a class="markdownIt-Anchor" href="#20215-查看容器内运行的进程">#</a> 2.0.2.15 查看容器内运行的进程</h5>
+<h5 id="查看容器内运行的进程"><a class="markdownIt-Anchor" href="#查看容器内运行的进程">#</a> 查看容器内运行的进程</h5>
 <p>docker top 容器 ID</p>
-<h5 id="20216-重新进入终端"><a class="markdownIt-Anchor" href="#20216-重新进入终端">#</a> 2.0.2.16 重新进入终端</h5>
+<h5 id="重新进入终端"><a class="markdownIt-Anchor" href="#重新进入终端">#</a> 重新进入终端</h5>
 <p>（1）.docker exec -it 容器 ID /bin/bash  (bash)（推荐使用）</p>
 <p>exec 是在容器中打开新的终端，并且可以启动新的进程，用 exit 退出不会导致容器的停止。</p>
 <p>（2）.docker attach 容器 ID</p>
 <p>attach 直接进入容器启动命令的终端，不会启动新的进程，用 exit 退出会导致容器的停止。</p>
-<h5 id="20217-拷贝文件"><a class="markdownIt-Anchor" href="#20217-拷贝文件">#</a> 2.0.2.17 拷贝文件</h5>
+<h5 id="拷贝文件"><a class="markdownIt-Anchor" href="#拷贝文件">#</a> 拷贝文件</h5>
 <p>docker cp 容器 ID: 容器内的路径 目标主机的地址</p>
-<h5 id="20218-导入和导出容器"><a class="markdownIt-Anchor" href="#20218-导入和导出容器">#</a> 2.0.2.18 导入和导出容器</h5>
+<h5 id="导入和导出容器"><a class="markdownIt-Anchor" href="#导入和导出容器">#</a> 导入和导出容器</h5>
 <p>导出：docker export 容器 ID &gt; 文件名.tar</p>
 <p>导入：cat 文件名.tar | docker import - 镜像用户 / 镜像名：镜像版本号</p>
-<h3 id="30-docker-镜像"><a class="markdownIt-Anchor" href="#30-docker-镜像">#</a> 3.0 docker 镜像</h3>
+<h3 id="docker-镜像"><a class="markdownIt-Anchor" href="#docker-镜像">#</a> docker 镜像</h3>
 <p>1. 是一种轻量级，可执行的独立软件包，它包含运行某个软件所需要的所有内容，我们把应用程序和配置依赖打包好形成一个可以交付的运行环境 (包括代码，运行时需要的库，环境变量和配置文件等)，这个打包好的运行环境就是 image 的镜像文件</p>
 <p>只有通过这个镜像文件才能生成 Docker 容器实例（类似 Java 中 new 出来的一个对象)</p>
 <p>2. 联合文件系统 UnionFS:Union 文件系统（UnionFS）是一种分层，轻量级并且高新能的文件系统，它支持对文件系统的修改作为一次提交来一层层的叠加，同时可以将不同目录挂载到同一个虚拟文件系统下，Union 文件系统是 Docker 镜像的基础。镜像可以通过分层来进行继承，基于基础镜像（没有父镜像），可以制作各种特性：一次同时加载多个文件系统，但从外面看起来，只能看到一个文件系统，联合加载会把各层文件系统叠加起来，这样最终的文件系统会包含所有底层的文件和目录。</p>
 <p>3.docker 镜像分层最大的一个好处就是为了资源共享，方便复制迁移，就是为了复用。</p>
 <p>docker commit 提交容器副本使之成为一个新的镜像</p>
 <p>docker commit -m=“提交的描述信息” -a=“作者” 容器 ID 要创建的目标镜像名：[标签名]</p>
-<h3 id="40-docker-容器数据卷"><a class="markdownIt-Anchor" href="#40-docker-容器数据卷">#</a> 4.0 docker 容器数据卷</h3>
+<h3 id="docker-容器数据卷"><a class="markdownIt-Anchor" href="#docker-容器数据卷">#</a> docker 容器数据卷</h3>
 <p>（1）. 是什么？</p>
 <p>1.Docker 挂载主机目录访问如果出现 cannnot open directory .: Permission denied</p>
 <p>解决办法：在挂载目录后多加一个–privileged=true 参数即可</p>
@@ -305,15 +305,15 @@ sudo systemctl restart docke2.r
 <p>4. 容器内只能读不能写 docker run -it --privileged=true -v / 宿主机绝对路径目录:/ 容器内目录:ro 镜像名</p>
 <p>（4）. 卷的继承和共享</p>
 <p>1.docker run  -it --privileged=true --volumes-from 父类 --name u2 ubuntu</p>
-<h3 id="50-docker-常规软件的安装"><a class="markdownIt-Anchor" href="#50-docker-常规软件的安装">#</a> 5.0 docker 常规软件的安装</h3>
-<h4 id="501步骤"><a class="markdownIt-Anchor" href="#501步骤">#</a> 5.0.1. 步骤</h4>
+<h3 id="docker-常规软件的安装"><a class="markdownIt-Anchor" href="#docker-常规软件的安装">#</a> docker 常规软件的安装</h3>
+<h4 id="步骤"><a class="markdownIt-Anchor" href="#步骤">#</a> 步骤</h4>
 <p>（1）. 搜索镜像</p>
 <p>（2）. 拉取镜像</p>
 <p>（3）. 查看镜像</p>
 <p>（4）. 启动镜像</p>
 <p>（5）. 停止容器</p>
 <p>（6）. 移除容器</p>
-<h4 id="502安装tomcat"><a class="markdownIt-Anchor" href="#502安装tomcat">#</a> 5.0.2. 安装 tomcat</h4>
+<h4 id="安装tomcat"><a class="markdownIt-Anchor" href="#安装tomcat">#</a> 安装 tomcat</h4>
 <p>（1）.docker search tomcat</p>
 <p>（2）.docker pull tomcat</p>
 <p>（3）.docker images</p>
@@ -321,7 +321,7 @@ sudo systemctl restart docke2.r
 <p>（5）. 访问报 404 (1. 没有关闭防火墙，2. 进入 tomcat docker exec -it 容器 ID/bin/bash ，然后 rm -r webapps , 最后 mv webapps.dist webapps）</p>
 <p>（6）.docker stop 容器 ID</p>
 <p>（7）.docker rmi 镜像 ID</p>
-<h4 id="503安装mysql"><a class="markdownIt-Anchor" href="#503安装mysql">#</a> 5.0.3. 安装 mysql</h4>
+<h4 id="安装mysql"><a class="markdownIt-Anchor" href="#安装mysql">#</a> 安装 mysql</h4>
 <p>（1）.docker search mysql</p>
 <p>（2）.docker pull mysql:5…7</p>
 <p>（3）.docker images</p>
@@ -338,7 +338,7 @@ default_character_set=utf8<br>
 [mysqld]<br>
 collation_server=utf8_general_ci<br>
 character_set_server=utf8</p>
-<h4 id="504安装redis"><a class="markdownIt-Anchor" href="#504安装redis">#</a> 5.0.4 安装 redis</h4>
+<h4 id="安装redis"><a class="markdownIt-Anchor" href="#安装redis">#</a> 安装 redis</h4>
 <p>（1）.docker search redis</p>
 <p>（2）.docker pull mysql:5…7</p>
 <p>（3）.docker images</p>
@@ -347,11 +347,11 @@ character_set_server=utf8</p>
 <p>（6）.redis-cli</p>
 <p>（7）.docker stop 容器 ID</p>
 <p>（8）.docker rmi 镜像 ID</p>
-<h3 id="60-mysql主从复制"><a class="markdownIt-Anchor" href="#60-mysql主从复制">#</a> 6.0 mysql 主从复制</h3>
-<h4 id="601新建主服务器容器实例3307"><a class="markdownIt-Anchor" href="#601新建主服务器容器实例3307">#</a> 6.0.1. 新建主服务器容器实例 3307</h4>
+<h3 id="mysql主从复制"><a class="markdownIt-Anchor" href="#mysql主从复制">#</a> mysql 主从复制</h3>
+<h4 id="新建主服务器容器实例3307"><a class="markdownIt-Anchor" href="#新建主服务器容器实例3307">#</a> 新建主服务器容器实例 3307</h4>
 <pre><code>docker run -d -p 3307:3306 --privileged=true -v  /cgcuse/mysql-master/log:/var/log/mysql -v /cgcuse/mysql-master/data:/var/lib/mysql -v  /cgcuse/mysql-master/conf:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=root  --name=mysql-master mysql:5.7
 </code></pre>
-<h4 id="602进入-cgcusemysql-masterconf-目录下新建mycnf-vim-mycnf"><a class="markdownIt-Anchor" href="#602进入-cgcusemysql-masterconf-目录下新建mycnf-vim-mycnf">#</a> 6.0.2. 进入 /cgcuse/mysql-master/conf 目录下新建 my.cnf       vim my.cnf</h4>
+<h4 id="进入-cgcusemysql-masterconf-目录下新建mycnf-vim-mycnf"><a class="markdownIt-Anchor" href="#进入-cgcusemysql-masterconf-目录下新建mycnf-vim-mycnf">#</a> 进入 /cgcuse/mysql-master/conf 目录下新建 my.cnf       vim my.cnf</h4>
 <pre><code>[mysqld]
 ## 设置server_id，同一局域网中需要唯一
 server_id=101 
@@ -369,18 +369,18 @@ expire_logs_days=7
 ## 如：1062错误是指一些主键重复，1032错误是因为主从数据库数据不一致
 slave_skip_errors=1062
 </code></pre>
-<h4 id="603修改完配置后重启master实例"><a class="markdownIt-Anchor" href="#603修改完配置后重启master实例">#</a> 6.0.3. 修改完配置后重启 master 实例</h4>
+<h4 id="修改完配置后重启master实例"><a class="markdownIt-Anchor" href="#修改完配置后重启master实例">#</a> 修改完配置后重启 master 实例</h4>
 <p>docker restart mysql-master</p>
-<h4 id="604进入容器"><a class="markdownIt-Anchor" href="#604进入容器">#</a> 6.0.4. 进入容器</h4>
+<h4 id="进入容器"><a class="markdownIt-Anchor" href="#进入容器">#</a> 进入容器</h4>
 <p>docker exec -it 容器 ID /bin/bash</p>
 <p>mysql -uroot -proot</p>
-<h4 id="605master容器实例内创建数据同步用户"><a class="markdownIt-Anchor" href="#605master容器实例内创建数据同步用户">#</a> 6.0.5.master 容器实例内创建数据同步用户</h4>
+<h4 id="master容器实例内创建数据同步用户"><a class="markdownIt-Anchor" href="#master容器实例内创建数据同步用户">#</a> master 容器实例内创建数据同步用户</h4>
 <p>create user ‘slave’@’%’ identified by ‘123456’;</p>
 <p>grant replication slave ,replication client on <em>.</em> to ‘slave’@’%’；</p>
-<h4 id="606新建从服务器容器实例3308"><a class="markdownIt-Anchor" href="#606新建从服务器容器实例3308">#</a> 6.0.6. 新建从服务器容器实例 3308</h4>
+<h4 id="新建从服务器容器实例3308"><a class="markdownIt-Anchor" href="#新建从服务器容器实例3308">#</a> 新建从服务器容器实例 3308</h4>
 <pre><code>docker run -d -p 3308:3306 --privileged=true -v  /cgcuse/mysql-slave/log:/var/log/mysql -v /cgcuse/mysql-slave/data:/var/lib/mysql -v  /cgcuse/mysql-slave/conf:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=root  --name=mysql-slave mysql:5.7
 </code></pre>
-<h4 id="607进入-cgcusemysql-slaveconf-目录下新建mycnf-vim-mycnf"><a class="markdownIt-Anchor" href="#607进入-cgcusemysql-slaveconf-目录下新建mycnf-vim-mycnf">#</a> 6.0.7. 进入 /cgcuse/mysql-slave/conf 目录下新建 my.cnf       vim my.cnf</h4>
+<h4 id="进入-cgcusemysql-slaveconf-目录下新建mycnf-vim-mycnf"><a class="markdownIt-Anchor" href="#进入-cgcusemysql-slaveconf-目录下新建mycnf-vim-mycnf">#</a> 进入 /cgcuse/mysql-slave/conf 目录下新建 my.cnf       vim my.cnf</h4>
 <pre><code>[mysqld]
 ## 设置server_id，同一局域网中需要唯一
 server_id=102
@@ -404,13 +404,13 @@ log_slave_updates=1
 ## slave设置为只读（具有super权限的用户除外）
 read_only=1
 </code></pre>
-<h4 id="608修改完配置后重启slave实例"><a class="markdownIt-Anchor" href="#608修改完配置后重启slave实例">#</a> 6.0.8. 修改完配置后重启 slave 实例</h4>
+<h4 id="修改完配置后重启slave实例"><a class="markdownIt-Anchor" href="#修改完配置后重启slave实例">#</a> 修改完配置后重启 slave 实例</h4>
 <p>docker restart mysql-slave</p>
-<h4 id="609在主数据库中查看主从同步状态"><a class="markdownIt-Anchor" href="#609在主数据库中查看主从同步状态">#</a> 6.0.9. 在主数据库中查看主从同步状态</h4>
+<h4 id="在主数据库中查看主从同步状态"><a class="markdownIt-Anchor" href="#在主数据库中查看主从同步状态">#</a> 在主数据库中查看主从同步状态</h4>
 <p>show master status;</p>
-<h4 id="6010进入mysql-slave容器"><a class="markdownIt-Anchor" href="#6010进入mysql-slave容器">#</a> 6.0.10. 进入 mysql-slave 容器</h4>
+<h4 id="进入mysql-slave容器"><a class="markdownIt-Anchor" href="#进入mysql-slave容器">#</a> 进入 mysql-slave 容器</h4>
 <p>docker exec -it 容器 ID  /bin/bash</p>
-<h4 id="6011在数据库中配置主从复制"><a class="markdownIt-Anchor" href="#6011在数据库中配置主从复制">#</a> 6.0.11. 在数据库中配置主从复制</h4>
+<h4 id="在数据库中配置主从复制"><a class="markdownIt-Anchor" href="#在数据库中配置主从复制">#</a> 在数据库中配置主从复制</h4>
 <p>change master to master_host=‘宿主机 ip’, master_user=‘slave’, master_password=‘123456’, master_port=3307, master_log_file=‘mall-mysql-bin.000001’, master_log_pos=617, master_connect_retry=30;</p>
 <p>master_host：主数据库的 IP 地址；</p>
 <p>master_port：主数据库的运行端口；</p>
@@ -419,22 +419,22 @@ read_only=1
 <p>master_log_file：指定从数据库要复制数据的日志文件，通过查看主数据的状态，获取 File 参数；</p>
 <p>master_log_pos：指定从数据库从哪个位置开始复制数据，通过查看主数据的状态，获取 Position 参数；</p>
 <p>master_connect_retry：连接失败重试的时间间隔，单位为秒。</p>
-<h4 id="6012在从数据库中查看主从同步状态"><a class="markdownIt-Anchor" href="#6012在从数据库中查看主从同步状态">#</a> 6.0.12. 在从数据库中查看主从同步状态</h4>
+<h4 id="在从数据库中查看主从同步状态"><a class="markdownIt-Anchor" href="#在从数据库中查看主从同步状态">#</a> 在从数据库中查看主从同步状态</h4>
 <p>show slave status \G;</p>
-<h4 id="6013在从数据库中开启主从同步"><a class="markdownIt-Anchor" href="#6013在从数据库中开启主从同步">#</a> 6.0.13. 在从数据库中开启主从同步</h4>
+<h4 id="在从数据库中开启主从同步"><a class="markdownIt-Anchor" href="#在从数据库中开启主从同步">#</a> 在从数据库中开启主从同步</h4>
 <p>start slave;</p>
-<h4 id="6014查看从数据库状态发现已经同步"><a class="markdownIt-Anchor" href="#6014查看从数据库状态发现已经同步">#</a> 6.0.14. 查看从数据库状态发现已经同步</h4>
+<h4 id="查看从数据库状态发现已经同步"><a class="markdownIt-Anchor" href="#查看从数据库状态发现已经同步">#</a> 查看从数据库状态发现已经同步</h4>
 <p>show slave status \G;</p>
-<h4 id="6015主从复制测试"><a class="markdownIt-Anchor" href="#6015主从复制测试">#</a> 6.0.15. 主从复制测试</h4>
+<h4 id="主从复制测试"><a class="markdownIt-Anchor" href="#主从复制测试">#</a> 主从复制测试</h4>
 <p>navicate 连接主库添加，从库查看或者命令添加；</p>
-<h3 id="70分布式存储"><a class="markdownIt-Anchor" href="#70分布式存储">#</a> 7.0. 分布式存储</h3>
-<h4 id="701哈希取余算法"><a class="markdownIt-Anchor" href="#701哈希取余算法">#</a> 7.0.1. 哈希取余算法</h4>
+<h3 id="分布式存储"><a class="markdownIt-Anchor" href="#分布式存储">#</a> 分布式存储</h3>
+<h4 id="哈希取余算法"><a class="markdownIt-Anchor" href="#哈希取余算法">#</a> 哈希取余算法</h4>
 <p>2 亿条记录就是 2 亿个 k，v，我们单机不行必须要分布式多机，假设有 3 台机器构成一个集群，用户每次读写操作都是根据公式；</p>
 <p>hash (key)% N 个机器台数，计算出哈希值，用来决定数据映射到哪一个结点上；</p>
 <p>优点：简单粗暴，直接有效，只需要预估好数据规划好节点，列如 3 台，8 台，10 台，就能保证一段时间的数据支撑，使用 Hash 算法让固定的一部分请求落到同一台服务器上，这样每台服务器固定处理一部分请求（并且维护这些请求信息）, 起到负载均衡 + 分而治之的作用；</p>
 <p>缺点：原来规划好的节点，进行扩容或者缩容就比较麻烦了额，不管扩缩，每次数据变动导致节点有变动，映射关系需要重新进行计算，在服务器个数固定不变时没有问题，如果需要弹性扩容或故障停机的情况下，原来的取模公式就会发生变化：Hash (key)/3 会变成 Hash (key) /?。此时地址经过取余运算的结果将发生很大变化，根据公式获取的服务器也会变得不可控。</p>
 <p>某个 redis 机器宕机了，由于台数数量变化，会导致 hash 取余全部数据重新洗牌。</p>
-<h4 id="702一致性哈希算法"><a class="markdownIt-Anchor" href="#702一致性哈希算法">#</a> 7.0.2. 一致性哈希算法</h4>
+<h4 id="一致性哈希算法"><a class="markdownIt-Anchor" href="#一致性哈希算法">#</a> 一致性哈希算法</h4>
 <p>1. 目标是为了解决分布式缓存数据变动和映射问题，某个机器宕机了，分母数量改变了，自然取余数不 OK 了。</p>
 <p>步骤:</p>
 <p>(1). 算法构建一致性哈希环：</p>
@@ -461,7 +461,7 @@ read_only=1
 <p>加入和删除节点只影响哈希环中顺时针方向的相邻的节点，对其他节点无影响。</p>
 <p>缺点</p>
 <p>数据的分布和节点的位置有关，因为这些节点不是均匀的分布在哈希环上的，所以数据在进行存储时达不到均匀分布的效果。</p>
-<h4 id="703哈希槽算法"><a class="markdownIt-Anchor" href="#703哈希槽算法">#</a> 7.0.3. 哈希槽算法</h4>
+<h4 id="哈希槽算法"><a class="markdownIt-Anchor" href="#哈希槽算法">#</a> 哈希槽算法</h4>
 <p>1. 是什么？</p>
 <p>哈希槽实质就是一个数组，数组 [0,2^14 -1] 形成 hash slot 空间。</p>
 <p>2. 可以干什么？</p>
@@ -472,8 +472,8 @@ read_only=1
 <p>一个集群只能有 16384 个槽，编号 0-16383（0-2^14-1）。这些槽会分配给集群中的所有主节点，分配策略没有要求。可以指定哪些编号的槽分配给哪个主节点。集群会记录节点和槽的对应关系。解决了节点和槽的关系后，接下来就需要对 key 求哈希值，然后对 16384 取余，余数是几 key 就落入对应的槽里。slot = CRC16 (key) % 16384。以槽为单位移动数据，因为槽的数目是固定的，处理起来比较容易，这样数据移动问题就解决了。</p>
 <p>4. 计算</p>
 <p>Redis 集群中内置了 16384 个哈希槽，redis 会根据节点数量大致均等的将哈希槽映射到不同的节点。当需要在 Redis 集群中放置一个 key-value 时，redis 先对 key 使用 crc16 算法算出一个结果，然后把结果对 16384 求余数，这样每个 key 都会对应一个编号在 0-16383 之间的哈希槽，也就是映射到某个节点上。如下代码，key 之 A 、B 在 Node2， key 之 C 落在 Node3 上</p>
-<h3 id="80-redis-3主3从集群"><a class="markdownIt-Anchor" href="#80-redis-3主3从集群">#</a> 8.0 Redis 3 主 3 从集群</h3>
-<h4 id="801-3主3从redis集群配置"><a class="markdownIt-Anchor" href="#801-3主3从redis集群配置">#</a> 8.0.1 3 主 3 从 redis 集群配置</h4>
+<h3 id="redis-3主3从集群"><a class="markdownIt-Anchor" href="#redis-3主3从集群">#</a> Redis 3 主 3 从集群</h3>
+<h4 id="3主3从redis集群配置"><a class="markdownIt-Anchor" href="#3主3从redis集群配置">#</a> 3 主 3 从 redis 集群配置</h4>
 <p>1. 关闭防火墙 + 启动 docker 后台服务、</p>
 <p>（1）. systemctl start docker</p>
 <p>2. 新建 6 个 docker 容器实例</p>
@@ -501,7 +501,7 @@ docker run -d --name redis-node-6 --net host --privileged=true -v /data/redis/sh
 <p>（1）.redis-cli -p 6381</p>
 <p>（2）.cluster info</p>
 <p>（3）.cluster nodes</p>
-<h4 id="802-3从容错切换迁移案例"><a class="markdownIt-Anchor" href="#802-3从容错切换迁移案例">#</a> 8.0.2 3 从容错切换迁移案例</h4>
+<h4 id="3从容错切换迁移案例"><a class="markdownIt-Anchor" href="#3从容错切换迁移案例">#</a> 3 从容错切换迁移案例</h4>
 <p>1. 数据读写存储</p>
 <p>（1）. 启动 6 机构成的集群并且使用 exec 进入</p>
 <p>（2）. 对 6381 新增两个 key</p>
@@ -524,7 +524,7 @@ docker run -d --name redis-node-6 --net host --privileged=true -v /data/redis/sh
 <p>docker start redis-node-5</p>
 <p>（4）. 查看集群状态</p>
 <p>redis-cli --cluster check 1.15.175.46:6381</p>
-<h4 id="803-3从扩容案例"><a class="markdownIt-Anchor" href="#803-3从扩容案例">#</a> 8.0.3 3 从扩容案例</h4>
+<h4 id="3从扩容案例"><a class="markdownIt-Anchor" href="#3从扩容案例">#</a> 3 从扩容案例</h4>
 <p>1. 新建 6387，6388 两个节点 + 新建后启动 + 查看是否 8 节点</p>
 <pre><code>docker run -d --name redis-node-7 --net host --privileged=true -v /data/redis/share/redis-node-7:/data redis:6.0.8 --cluster-enabled yes --appendonly yes --port 6387
 
@@ -548,7 +548,7 @@ docker ps
 <p>redis-cli --cluster add-node  1.15.175.46:6388  1.15.175.46:6387 --cluster-slave --cluster-master-id e4781f644d4a4e4d4b4d107157b9ba8144631451------- 这个是 6387 的编号，按照自己实际情况</p>
 <p>8. 检查集群情况第三次</p>
 <p>redis-cli --cluster check 真实 ip 地址：6388</p>
-<h4 id="804-3从缩容案例"><a class="markdownIt-Anchor" href="#804-3从缩容案例">#</a> 8.0.4 3 从缩容案例</h4>
+<h4 id="3从缩容案例"><a class="markdownIt-Anchor" href="#3从缩容案例">#</a> 3 从缩容案例</h4>
 <p>1. 下线 6387，6388 两个节点</p>
 <p>2. 检查集群情况 1 获得 6388 的节点 ID</p>
 <p>redis-cli --cluster check 真实 ip 地址：6388</p>
@@ -563,8 +563,8 @@ docker ps
 <p>redis-cli --cluster del-node 1.15.175.46:6387 5d149074b7e57b802287d1797a874ed7a1a284a8</p>
 <p>7. 检查集群情况第三次</p>
 <p>redis-cli --cluster check 真实 ip 地址：6381</p>
-<h3 id="90-dockerfile"><a class="markdownIt-Anchor" href="#90-dockerfile">#</a> 9.0 DockerFile</h3>
-<h4 id="901dockerfile构建过程解析"><a class="markdownIt-Anchor" href="#901dockerfile构建过程解析">#</a> 9.0.1dockerfile 构建过程解析</h4>
+<h3 id="dockerfile"><a class="markdownIt-Anchor" href="#dockerfile">#</a> DockerFile</h3>
+<h4 id="dockerfile构建过程解析"><a class="markdownIt-Anchor" href="#dockerfile构建过程解析">#</a> dockerfile 构建过程解析</h4>
 <p>1.Dockerfile 是用来构建 Docker 镜像的文本文件，是由一条条构建镜像所需的指令和参数构成的脚本。</p>
 <p>2. 构建过程</p>
 <p>（1）. 编写 Dockerfile 文件</p>
@@ -581,7 +581,7 @@ docker ps
 <p>（3）. 执行类似 docker commit 的操作提交一个新的镜像层</p>
 <p>（4）.docker 再基于刚提交的镜像运行一个新的容器</p>
 <p>（5）. 执行 dockerfile 中的下一条指令直到所有指令都执行完成</p>
-<h4 id="902-dockerfile常用保留字指令"><a class="markdownIt-Anchor" href="#902-dockerfile常用保留字指令">#</a> 9.0.2 DockerFile 常用保留字指令</h4>
+<h4 id="dockerfile常用保留字指令"><a class="markdownIt-Anchor" href="#dockerfile常用保留字指令">#</a> DockerFile 常用保留字指令</h4>
 <p><strong>FROM</strong> : 基础镜像当前新镜像是基于哪个镜像的，指定一个已经存在的镜像作为模板，第一条必须是 from</p>
 <p><strong>MAINTAINER</strong> : 镜像维护者的姓名和邮箱地址</p>
 <p><strong>RUN</strong> ：</p>
@@ -605,7 +605,7 @@ docker ps
 <p>1.RUN 是在 docker build 时运行</p>
 <p>2.CMD 是在 docker run 时运行</p>
 <p><strong>ENTRYPOINT</strong>: 指定一个容器启动时要运行的命令，类似 CMD 但是不会被 docker run 之后的参数替换。</p>
-<h4 id="903案例"><a class="markdownIt-Anchor" href="#903案例">#</a> 9.0.3 案例</h4>
+<h4 id="案例"><a class="markdownIt-Anchor" href="#案例">#</a> 案例</h4>
 <p>自定义镜像 mycentosjava8（具备 jdk8，ifconfig，vim）</p>
 <p>下载 jdk 文件到 myfile 下</p>
 <p>vim Dockerfile</p>
@@ -639,7 +639,7 @@ CMD /bin/bash
 <p>构建</p>
 <p>docker build -t 新镜像名字:tag .</p>
 <p>docker image prune 删除虚悬镜像</p>
-<h4 id="904-微服务实战"><a class="markdownIt-Anchor" href="#904-微服务实战">#</a> 9.0.4 微服务实战</h4>
+<h4 id="微服务实战"><a class="markdownIt-Anchor" href="#微服务实战">#</a> 微服务实战</h4>
 <p>1. 新建一个 springboot 微服务项目</p>
 <p>2. 搞定微服务 jar 包</p>
 <p>3.jar 包和 Dockerfile 放在同一个路径下</p>
@@ -661,8 +661,8 @@ EXPOSE 6001
 <p>5. 运行容器</p>
 <p>docker run -itd  -p 6001:6001 容器 ID</p>
 <p>6. 测试</p>
-<h3 id="100-docker网络"><a class="markdownIt-Anchor" href="#100-docker网络">#</a> 10.0 Docker 网络</h3>
-<h4 id="1001常用命令"><a class="markdownIt-Anchor" href="#1001常用命令">#</a> 10.0.1 常用命令</h4>
+<h3 id="docker网络"><a class="markdownIt-Anchor" href="#docker网络">#</a> Docker 网络</h3>
+<h4 id="常用命令"><a class="markdownIt-Anchor" href="#常用命令">#</a> 常用命令</h4>
 <p>1. 查看 docker 网络模式命令</p>
 <p>docker network ls</p>
 <p>2. 查看所有命令</p>
@@ -673,16 +673,16 @@ EXPOSE 6001
 <p>docker network rm xxx 网络名字</p>
 <p>5. 创建网络</p>
 <p>docker network create 网络名字</p>
-<h4 id="1002-作用"><a class="markdownIt-Anchor" href="#1002-作用">#</a> 10.0.2 作用</h4>
+<h4 id="作用"><a class="markdownIt-Anchor" href="#作用">#</a> 作用</h4>
 <p>1. 容器的互联和通信以及端口映射</p>
 <p>2. 容器 IP 变动的时候可以通过服务名直接网络通信而不受到影像</p>
-<h4 id="1003-网络模式"><a class="markdownIt-Anchor" href="#1003-网络模式">#</a> 10.0.3 网络模式</h4>
+<h4 id="网络模式"><a class="markdownIt-Anchor" href="#网络模式">#</a> 网络模式</h4>
 <p>1.bridge 模式：使用–network bridge 指定，默认使用 docker0</p>
 <p>2.host 模式：使用–network host 指定</p>
 <p>3.none 模式：使用–network none 指定</p>
 <p>4.container 模式：使用–network container:NAME 或者容器 ID 指定</p>
 <p>docker 容器内部 ip 时有可能会发生改变的</p>
-<h5 id="10031-bridge"><a class="markdownIt-Anchor" href="#10031-bridge">#</a> 10.0.3.1 bridge</h5>
+<h5 id="bridge"><a class="markdownIt-Anchor" href="#bridge">#</a> bridge</h5>
 <p>Docker 服务默认会创建一个 docker0 网桥（其上有一个 docker0 内部接口），该桥接网络的名称为 docker0，它在内核层连通了其他的物理或虚拟网卡，这就将所有容器和本地主机都放到同一个物理网络。Docker 默认指定了 docker0 接口 的 IP 地址和子网掩码，让主机和容器之间可以通过网桥相互通信。</p>
 <p># 查看 bridge 网络的详细信息，并通过 grep 获取名称项</p>
 <p>docker network inspect bridge | grep name</p>
@@ -693,19 +693,19 @@ EXPOSE 6001
 <p>3.2 每个容器实例内部也有一块网卡，每个接口叫 eth0；</p>
 <p>3.3 docker0 上面的每个 veth 匹配某个容器实例内部的 eth0，两两配对，一一匹配。</p>
 <p>通过上述，将宿主机上的所有容器都连接到这个内部网络上，两个容器在同一个网络下，会从这个网关下各自拿到分配的 ip，此时两个容器的网络是互通的。</p>
-<h5 id="10032-host"><a class="markdownIt-Anchor" href="#10032-host">#</a> 10.0.3.2 host</h5>
+<h5 id="host"><a class="markdownIt-Anchor" href="#host">#</a> host</h5>
 <p>直接使用宿主机的 IP 地址与外界进行通信，不再需要额外进行 NAT 转换。</p>
 <p>容器将不会获得一个独立的 Network Namespace， 而是和宿主机共用一个 Network Namespace。容器将不会虚拟出自己的网卡而是使用宿主机的 IP 和端口。</p>
 <p>docker run -d  -p 8083:8083 --network host  --name …</p>
-<h5 id="10033-none"><a class="markdownIt-Anchor" href="#10033-none">#</a> 10.0.3.3 none</h5>
+<h5 id="none"><a class="markdownIt-Anchor" href="#none">#</a> none</h5>
 <p>禁用网络功能只有 lo 标识</p>
 <p>docker run -d  -p 8083:8083 --network none --name …</p>
-<h5 id="10034-container"><a class="markdownIt-Anchor" href="#10034-container">#</a> 10.0.3.4 container</h5>
+<h5 id="container"><a class="markdownIt-Anchor" href="#container">#</a> container</h5>
 <p>container ⽹络模式</p>
 <p>新建的容器和已经存在的一个容器共享一个网络 ip 配置而不是和宿主机共享。新创建的容器不会创建自己的网卡，配置自己的 IP，而是和一个指定的容器共享 IP、端口范围等。同样，两个容器除了网络方面，其他的如文件系统、进程列表等还是隔离的。</p>
 <p>docker run -it --network container:alpine1 --name …</p>
-<h4 id="1011-docker-平台架构图解"><a class="markdownIt-Anchor" href="#1011-docker-平台架构图解">#</a> 10.1.1 docker 平台架构图解</h4>
-<h5 id="10111整体说明"><a class="markdownIt-Anchor" href="#10111整体说明">#</a> 10.1.1.1. 整体说明</h5>
+<h4 id="docker-平台架构图解"><a class="markdownIt-Anchor" href="#docker-平台架构图解">#</a> docker 平台架构图解</h4>
+<h5 id="整体说明"><a class="markdownIt-Anchor" href="#整体说明">#</a> 整体说明</h5>
 <p>从其架构和运行流程来看，Docker 是一个 C/S 模式的架构，后端是一个松耦合架构，众多模块各司其职。</p>
 <p>Docker 运行的基本流程为：</p>
 <p>1 用户是使用 Docker Client 与 Docker Daemon 建立通信，并发送请求给后者。</p>
@@ -715,31 +715,31 @@ EXPOSE 6001
 <p>5 当需要为 Docker 创建网络环境时，通过网络管理驱动 Network driver 创建并配置 Docker 容器网络环境。</p>
 <p>6 当需要限制 Docker 容器运行资源或执行用户指令等操作时，则通过 Execdriver 来完成。</p>
 <p>7 Libcontainer 是一项独立的容器管理包，Network driver 以及 Exec driver 都是通过 Libcontainer 来实现具体对容器进行的操作。</p>
-<h5 id="10112整体架构"><a class="markdownIt-Anchor" href="#10112整体架构">#</a> 10.1.1.2. 整体架构</h5>
+<h5 id="整体架构"><a class="markdownIt-Anchor" href="#整体架构">#</a> 整体架构</h5>
 <p><img data-src="https://cgc-blog.oss-cn-beijing.aliyuncs.com/container/dockerall/jiagou.png" alt=""></p>
 <p>​</p>
-<h3 id="110-docker-compose-容器编排"><a class="markdownIt-Anchor" href="#110-docker-compose-容器编排">#</a> 11.0 Docker-compose 容器编排</h3>
-<h4 id="1101-是什么"><a class="markdownIt-Anchor" href="#1101-是什么">#</a> 11.0.1 是什么？</h4>
+<h3 id="docker-compose-容器编排"><a class="markdownIt-Anchor" href="#docker-compose-容器编排">#</a> Docker-compose 容器编排</h3>
+<h4 id="是什么"><a class="markdownIt-Anchor" href="#是什么">#</a> 是什么？</h4>
 <p>Docker-Compose 是 Docker 官方的开源项目，负责实现对容器集群的快速编排</p>
-<h4 id="1102-能干什么"><a class="markdownIt-Anchor" href="#1102-能干什么">#</a> 11.0.2 能干什么？</h4>
+<h4 id="能干什么"><a class="markdownIt-Anchor" href="#能干什么">#</a> 能干什么？</h4>
 <p>docker 建议我们每一个容器中只运行一个服务，因为 docker 容器本身占用资源极少，所以最好是将每个服务单独的分割开来但是这样我们又面临了一个问题？</p>
 <p>如果我需要同时部署好多个服务，难道要每个服务单独写 Dockerfile 然后在构建镜像，构建容器，这样累都累死了，所以 docker 官方给我们提供了 docker-compose 多服务部署的工具</p>
 <p>例如要实现一个 Web 微服务项目，除了 Web 服务容器本身，往往还需要再加上后端的数据库 mysql 服务容器，redis 服务器，注册中心 eureka，甚至还包括负载均衡容器等等。。。。。。</p>
 <p>Compose 允许用户通过一个单独的 docker-compose.yml 模板文件（YAML 格式）来定义一组相关联的应用容器为一个项目（project）。</p>
 <p>可以很容易地用一个配置文件定义一个多容器的应用，然后使用一条指令安装这个应用的所有依赖，完成构建。Docker-Compose 解决了容器与容器之间如何管理编排的问题。</p>
-<h4 id="1103-去哪里下载"><a class="markdownIt-Anchor" href="#1103-去哪里下载">#</a> 11.0.3 去哪里下载？</h4>
+<h4 id="去哪里下载"><a class="markdownIt-Anchor" href="#去哪里下载">#</a> 去哪里下载？</h4>
 <p>下载：</p>
 <p>1.curl -L “<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2RvY2tlci9jb21wb3NlL3JlbGVhc2VzL2Rvd25sb2FkLzEuMjkuMi9kb2NrZXItY29tcG9zZS0=">https://github.com/docker/compose/releases/download/1.29.2/docker-compose-</span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>u</mi><mi>n</mi><mi>a</mi><mi>m</mi><mi>e</mi><mo>−</mo><mi>s</mi><mo stretchy="false">)</mo><mo>−</mo></mrow><annotation encoding="application/x-tex">(uname -s)-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">u</span><span class="mord mathnormal">n</span><span class="mord mathnormal">a</span><span class="mord mathnormal">m</span><span class="mord mathnormal">e</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">s</span><span class="mclose">)</span><span class="mord">−</span></span></span></span>(uname -m)” -o /usr/local/bin/docker-compose</p>
 <p>2.chmod +x /usr/local/bin/docker-compose</p>
 <p>3.docker-compose --version</p>
 <p>卸载：</p>
 <p>sudo rm /usr/local/bin/docker-compose</p>
-<h4 id="1104-compose核心概念"><a class="markdownIt-Anchor" href="#1104-compose核心概念">#</a> 11.0.4 Compose 核心概念</h4>
+<h4 id="compose核心概念"><a class="markdownIt-Anchor" href="#compose核心概念">#</a> Compose 核心概念</h4>
 <p>1. 一文件 docker-compose.yml</p>
 <p>2. 两要素</p>
 <p>（1）. 服务：一个个应用容器实例，比如订单微服务，库存微服务，mysql 容器。</p>
 <p>（2）. 工程：由一组关联的应用容器组成的一个完整业务单元，在 docker-compose.yml 文件中定义。</p>
-<h4 id="1105-compose常用命令"><a class="markdownIt-Anchor" href="#1105-compose常用命令">#</a> 11.0.5 Compose 常用命令</h4>
+<h4 id="compose常用命令"><a class="markdownIt-Anchor" href="#compose常用命令">#</a> Compose 常用命令</h4>
 <p><strong>Compose**** 常用命令</strong></p>
 <p>docker-compose -h              # 查看帮助</p>
 <p>docker-compose up              # 启动所有 docker-compose 服务</p>
@@ -754,11 +754,11 @@ EXPOSE 6001
 <p>docker-compose restart  # 重启服务</p>
 <p>docker-compose start   # 启动服务</p>
 <p>docker-compose stop    # 停止服务</p>
-<h4 id="1106-compose使用的三个步骤"><a class="markdownIt-Anchor" href="#1106-compose使用的三个步骤">#</a> 11.0.6 Compose 使用的三个步骤</h4>
+<h4 id="compose使用的三个步骤"><a class="markdownIt-Anchor" href="#compose使用的三个步骤">#</a> Compose 使用的三个步骤</h4>
 <p>1. 编写 Dockerfile 定义各个微服务应用并构建出对应的镜像文件</p>
 <p>2. 使用 docker-compose.yml 定义一个完整业务单元，安排好整体应用中的各个容器服务</p>
 <p>3. 最后执行 docker-compose up 命令并启动运行整个应用程序，完成一键部署上线</p>
-<h4 id="1107-compose编排微服务"><a class="markdownIt-Anchor" href="#1107-compose编排微服务">#</a> 11.0.7 Compose 编排微服务</h4>
+<h4 id="compose编排微服务"><a class="markdownIt-Anchor" href="#compose编排微服务">#</a> Compose 编排微服务</h4>
 <p>1.package 把项目打包，放在与 docker-compose.yml 和 Dockerfile 同个目录下</p>
 <p>2. 编写 docker-compose.yml 文件</p>
 <pre><code>version: &quot;3&quot;
@@ -823,7 +823,7 @@ EXPOSE 6001
 <p>4.docker build -t zzyy_docker:1.6 .</p>
 <p>5. 执行 docker-compose up 或者 docker-compose up -d</p>
 <p>6. 关闭 docker-compose stop</p>
-<h3 id="130-docker-轻量级可视化工具portainer"><a class="markdownIt-Anchor" href="#130-docker-轻量级可视化工具portainer">#</a> 13.0 Docker 轻量级可视化工具 Portainer</h3>
+<h3 id="docker-轻量级可视化工具portainer"><a class="markdownIt-Anchor" href="#docker-轻量级可视化工具portainer">#</a> Docker 轻量级可视化工具 Portainer</h3>
 <p>1. 是什么？</p>
 <p>Portainer 是一款轻量级的应用，它提供了图形化界面，用于方便地管理 Docker 环境，包括单机环境和集群环境。</p>
 <p>2. 安装</p>
@@ -831,7 +831,7 @@ EXPOSE 6001
 <p>docker run -d -p 8000:8000 -p 9000:9000 --name portainer   --restart=always   -v /var/run/docker.sock:/var/run/docker.sock   -v portainer_data:/data   portainer/portainer</p>
 <p>（2）. 设置账号密码</p>
 <p>（3）. 地址 ip:9000</p>
-<h3 id="140-docker-容器监控之cadvisorinfluxdbgranfana"><a class="markdownIt-Anchor" href="#140-docker-容器监控之cadvisorinfluxdbgranfana">#</a> 14.0 Docker 容器监控之 CAdvisor+InfluxDB+Granfana</h3>
+<h3 id="docker-容器监控之cadvisorinfluxdbgranfana"><a class="markdownIt-Anchor" href="#docker-容器监控之cadvisorinfluxdbgranfana">#</a> Docker 容器监控之 CAdvisor+InfluxDB+Granfana</h3>
 <p>1. 监控</p>
 <p>docker stats</p>
 <p>2.CAdvisor+InfluxDB+Granfana</p>
@@ -907,7 +907,7 @@ services:
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2022-05-06 22:25:45" itemprop="dateModified" datetime="2022-05-06T22:25:45+08:00">2022-05-06</time>
+    <time title="修改时间：2022-05-06 22:41:44" itemprop="dateModified" datetime="2022-05-06T22:41:44+08:00">2022-05-06</time>
   </span>
   <span id="computer-science/container/Docker/docker/" class="item leancloud_visitors" data-flag-title="docker笔记" title="阅读次数">
       <span class="icon">
@@ -970,7 +970,7 @@ services:
     <div class="item left">
       
 
-  <a href="/computer-science/container/Docker%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%B9%8BAlpine/dockeralpine/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeu1usa7j20zk0m8b29.jpg" title="dockeralpine笔记">
+  <a href="/computer-science/container/Docker%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%B9%8BAlpine/dockeralpine/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipevuctzzj20zk0m84qp.jpg" title="dockeralpine笔记">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> 容器</span>
   <h3>dockeralpine笔记</h3>
@@ -994,7 +994,7 @@ services:
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#docker"><span class="toc-number">1.</span> <span class="toc-text"> docker</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#10-docker-%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4"><span class="toc-number">1.1.</span> <span class="toc-text"> 1.0 docker 安装步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#101-docker-%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E4%BA%91%E5%8A%A0%E9%80%9F"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 1.0.1 docker 配置阿里云加速</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#20-docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">1.2.</span> <span class="toc-text"> 2.0 docker 常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#201-%E5%B8%AE%E5%8A%A9%E5%90%AF%E5%8A%A8%E7%B1%BB%E5%91%BD%E4%BB%A4"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 2.0.1 帮助启动类命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#202-%E9%95%9C%E5%83%8F%E5%91%BD%E4%BB%A4"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 2.0.2 镜像命令</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#2021-%E6%98%BE%E7%A4%BA%E5%B7%B2%E6%9C%89%E9%95%9C%E5%83%8F"><span class="toc-number">1.2.2.1.</span> <span class="toc-text"> 2.0.2.1 显示已有镜像</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2022-%E4%BB%8E%E4%BB%93%E5%BA%93%E6%9F%A5%E6%89%BE%E9%95%9C%E5%83%8F"><span class="toc-number">1.2.2.2.</span> <span class="toc-text"> 2.0.2.2 从仓库查找镜像</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2023-%E4%B8%8B%E8%BD%BD%E9%95%9C%E5%83%8F"><span class="toc-number">1.2.2.3.</span> <span class="toc-text"> 2.0.2.3 下载镜像</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2024-%E6%9F%A5%E7%9C%8Bdocker%E8%B5%84%E6%BA%90%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5"><span class="toc-number">1.2.2.4.</span> <span class="toc-text"> 2.0.2.4 查看 docker 资源占用情况</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2025-%E5%88%A0%E9%99%A4%E9%95%9C%E5%83%8F"><span class="toc-number">1.2.2.5.</span> <span class="toc-text"> 2.0.2.5  删除镜像</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2026-%E5%90%AF%E5%8A%A8%E4%BA%A4%E4%BA%92%E5%BC%8F%E5%AE%B9%E5%99%A8"><span class="toc-number">1.2.2.6.</span> <span class="toc-text"> 2.0.2.6 启动交互式容器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2027-%E6%9F%A5%E7%9C%8B%E5%AE%B9%E5%99%A8"><span class="toc-number">1.2.2.7.</span> <span class="toc-text"> 2.0.2.7 查看容器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2028-%E9%80%80%E5%87%BA%E5%AE%B9%E5%99%A8"><span class="toc-number">1.2.2.8.</span> <span class="toc-text"> 2.0.2.8 退出容器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2029-%E5%90%AF%E5%8A%A8%E5%AE%B9%E5%99%A8"><span class="toc-number">1.2.2.9.</span> <span class="toc-text"> 2.0.2.9 启动容器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#20210-%E5%81%9C%E6%AD%A2%E5%AE%B9%E5%99%A8"><span class="toc-number">1.2.2.10.</span> <span class="toc-text"> 2.0.2.10 停止容器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#20211-%E9%87%8D%E5%90%AF%E5%AE%B9%E5%99%A8"><span class="toc-number">1.2.2.11.</span> <span class="toc-text"> 2.0.2.11 重启容器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#20212-%E5%BC%BA%E5%88%B6%E5%81%9C%E6%AD%A2%E5%AE%B9%E5%99%A8"><span class="toc-number">1.2.2.12.</span> <span class="toc-text"> 2.0.2.12 强制停止容器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#20213-%E5%88%A0%E9%99%A4%E5%B7%B2%E5%81%9C%E6%AD%A2%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="toc-number">1.2.2.13.</span> <span class="toc-text"> 2.0.2.13 删除已停止的容器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#20214-%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97"><span class="toc-number">1.2.2.14.</span> <span class="toc-text"> 2.0.2.14 查看日志</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#20215-%E6%9F%A5%E7%9C%8B%E5%AE%B9%E5%99%A8%E5%86%85%E8%BF%90%E8%A1%8C%E7%9A%84%E8%BF%9B%E7%A8%8B"><span class="toc-number">1.2.2.15.</span> <span class="toc-text"> 2.0.2.15 查看容器内运行的进程</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#20216-%E9%87%8D%E6%96%B0%E8%BF%9B%E5%85%A5%E7%BB%88%E7%AB%AF"><span class="toc-number">1.2.2.16.</span> <span class="toc-text"> 2.0.2.16 重新进入终端</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#20217-%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6"><span class="toc-number">1.2.2.17.</span> <span class="toc-text"> 2.0.2.17 拷贝文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#20218-%E5%AF%BC%E5%85%A5%E5%92%8C%E5%AF%BC%E5%87%BA%E5%AE%B9%E5%99%A8"><span class="toc-number">1.2.2.18.</span> <span class="toc-text"> 2.0.2.18 导入和导出容器</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#30-docker-%E9%95%9C%E5%83%8F"><span class="toc-number">1.3.</span> <span class="toc-text"> 3.0 docker 镜像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#40-docker-%E5%AE%B9%E5%99%A8%E6%95%B0%E6%8D%AE%E5%8D%B7"><span class="toc-number">1.4.</span> <span class="toc-text"> 4.0 docker 容器数据卷</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#50-docker-%E5%B8%B8%E8%A7%84%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85"><span class="toc-number">1.5.</span> <span class="toc-text"> 5.0 docker 常规软件的安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#501%E6%AD%A5%E9%AA%A4"><span class="toc-number">1.5.1.</span> <span class="toc-text"> 5.0.1. 步骤</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#502%E5%AE%89%E8%A3%85tomcat"><span class="toc-number">1.5.2.</span> <span class="toc-text"> 5.0.2. 安装 tomcat</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#503%E5%AE%89%E8%A3%85mysql"><span class="toc-number">1.5.3.</span> <span class="toc-text"> 5.0.3. 安装 mysql</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#504%E5%AE%89%E8%A3%85redis"><span class="toc-number">1.5.4.</span> <span class="toc-text"> 5.0.4 安装 redis</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#60-mysql%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6"><span class="toc-number">1.6.</span> <span class="toc-text"> 6.0 mysql 主从复制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#601%E6%96%B0%E5%BB%BA%E4%B8%BB%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%B9%E5%99%A8%E5%AE%9E%E4%BE%8B3307"><span class="toc-number">1.6.1.</span> <span class="toc-text"> 6.0.1. 新建主服务器容器实例 3307</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#602%E8%BF%9B%E5%85%A5-cgcusemysql-masterconf-%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%96%B0%E5%BB%BAmycnf-vim-mycnf"><span class="toc-number">1.6.2.</span> <span class="toc-text"> 6.0.2. 进入 &#x2F;cgcuse&#x2F;mysql-master&#x2F;conf 目录下新建 my.cnf       vim my.cnf</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#603%E4%BF%AE%E6%94%B9%E5%AE%8C%E9%85%8D%E7%BD%AE%E5%90%8E%E9%87%8D%E5%90%AFmaster%E5%AE%9E%E4%BE%8B"><span class="toc-number">1.6.3.</span> <span class="toc-text"> 6.0.3. 修改完配置后重启 master 实例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#604%E8%BF%9B%E5%85%A5%E5%AE%B9%E5%99%A8"><span class="toc-number">1.6.4.</span> <span class="toc-text"> 6.0.4. 进入容器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#605master%E5%AE%B9%E5%99%A8%E5%AE%9E%E4%BE%8B%E5%86%85%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%90%8C%E6%AD%A5%E7%94%A8%E6%88%B7"><span class="toc-number">1.6.5.</span> <span class="toc-text"> 6.0.5.master 容器实例内创建数据同步用户</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#606%E6%96%B0%E5%BB%BA%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%B9%E5%99%A8%E5%AE%9E%E4%BE%8B3308"><span class="toc-number">1.6.6.</span> <span class="toc-text"> 6.0.6. 新建从服务器容器实例 3308</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#607%E8%BF%9B%E5%85%A5-cgcusemysql-slaveconf-%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%96%B0%E5%BB%BAmycnf-vim-mycnf"><span class="toc-number">1.6.7.</span> <span class="toc-text"> 6.0.7. 进入 &#x2F;cgcuse&#x2F;mysql-slave&#x2F;conf 目录下新建 my.cnf       vim my.cnf</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#608%E4%BF%AE%E6%94%B9%E5%AE%8C%E9%85%8D%E7%BD%AE%E5%90%8E%E9%87%8D%E5%90%AFslave%E5%AE%9E%E4%BE%8B"><span class="toc-number">1.6.8.</span> <span class="toc-text"> 6.0.8. 修改完配置后重启 slave 实例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#609%E5%9C%A8%E4%B8%BB%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E6%9F%A5%E7%9C%8B%E4%B8%BB%E4%BB%8E%E5%90%8C%E6%AD%A5%E7%8A%B6%E6%80%81"><span class="toc-number">1.6.9.</span> <span class="toc-text"> 6.0.9. 在主数据库中查看主从同步状态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6010%E8%BF%9B%E5%85%A5mysql-slave%E5%AE%B9%E5%99%A8"><span class="toc-number">1.6.10.</span> <span class="toc-text"> 6.0.10. 进入 mysql-slave 容器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6011%E5%9C%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E9%85%8D%E7%BD%AE%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6"><span class="toc-number">1.6.11.</span> <span class="toc-text"> 6.0.11. 在数据库中配置主从复制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6012%E5%9C%A8%E4%BB%8E%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E6%9F%A5%E7%9C%8B%E4%B8%BB%E4%BB%8E%E5%90%8C%E6%AD%A5%E7%8A%B6%E6%80%81"><span class="toc-number">1.6.12.</span> <span class="toc-text"> 6.0.12. 在从数据库中查看主从同步状态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6013%E5%9C%A8%E4%BB%8E%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E5%BC%80%E5%90%AF%E4%B8%BB%E4%BB%8E%E5%90%8C%E6%AD%A5"><span class="toc-number">1.6.13.</span> <span class="toc-text"> 6.0.13. 在从数据库中开启主从同步</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6014%E6%9F%A5%E7%9C%8B%E4%BB%8E%E6%95%B0%E6%8D%AE%E5%BA%93%E7%8A%B6%E6%80%81%E5%8F%91%E7%8E%B0%E5%B7%B2%E7%BB%8F%E5%90%8C%E6%AD%A5"><span class="toc-number">1.6.14.</span> <span class="toc-text"> 6.0.14. 查看从数据库状态发现已经同步</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6015%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6%E6%B5%8B%E8%AF%95"><span class="toc-number">1.6.15.</span> <span class="toc-text"> 6.0.15. 主从复制测试</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#70%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8"><span class="toc-number">1.7.</span> <span class="toc-text"> 7.0. 分布式存储</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#701%E5%93%88%E5%B8%8C%E5%8F%96%E4%BD%99%E7%AE%97%E6%B3%95"><span class="toc-number">1.7.1.</span> <span class="toc-text"> 7.0.1. 哈希取余算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#702%E4%B8%80%E8%87%B4%E6%80%A7%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95"><span class="toc-number">1.7.2.</span> <span class="toc-text"> 7.0.2. 一致性哈希算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#703%E5%93%88%E5%B8%8C%E6%A7%BD%E7%AE%97%E6%B3%95"><span class="toc-number">1.7.3.</span> <span class="toc-text"> 7.0.3. 哈希槽算法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#80-redis-3%E4%B8%BB3%E4%BB%8E%E9%9B%86%E7%BE%A4"><span class="toc-number">1.8.</span> <span class="toc-text"> 8.0 Redis 3 主 3 从集群</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#801-3%E4%B8%BB3%E4%BB%8Eredis%E9%9B%86%E7%BE%A4%E9%85%8D%E7%BD%AE"><span class="toc-number">1.8.1.</span> <span class="toc-text"> 8.0.1 3 主 3 从 redis 集群配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#802-3%E4%BB%8E%E5%AE%B9%E9%94%99%E5%88%87%E6%8D%A2%E8%BF%81%E7%A7%BB%E6%A1%88%E4%BE%8B"><span class="toc-number">1.8.2.</span> <span class="toc-text"> 8.0.2 3 从容错切换迁移案例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#803-3%E4%BB%8E%E6%89%A9%E5%AE%B9%E6%A1%88%E4%BE%8B"><span class="toc-number">1.8.3.</span> <span class="toc-text"> 8.0.3 3 从扩容案例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#804-3%E4%BB%8E%E7%BC%A9%E5%AE%B9%E6%A1%88%E4%BE%8B"><span class="toc-number">1.8.4.</span> <span class="toc-text"> 8.0.4 3 从缩容案例</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#90-dockerfile"><span class="toc-number">1.9.</span> <span class="toc-text"> 9.0 DockerFile</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#901dockerfile%E6%9E%84%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%A7%A3%E6%9E%90"><span class="toc-number">1.9.1.</span> <span class="toc-text"> 9.0.1dockerfile 构建过程解析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#902-dockerfile%E5%B8%B8%E7%94%A8%E4%BF%9D%E7%95%99%E5%AD%97%E6%8C%87%E4%BB%A4"><span class="toc-number">1.9.2.</span> <span class="toc-text"> 9.0.2 DockerFile 常用保留字指令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#903%E6%A1%88%E4%BE%8B"><span class="toc-number">1.9.3.</span> <span class="toc-text"> 9.0.3 案例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#904-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%AE%9E%E6%88%98"><span class="toc-number">1.9.4.</span> <span class="toc-text"> 9.0.4 微服务实战</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#100-docker%E7%BD%91%E7%BB%9C"><span class="toc-number">1.10.</span> <span class="toc-text"> 10.0 Docker 网络</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1001%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">1.10.1.</span> <span class="toc-text"> 10.0.1 常用命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1002-%E4%BD%9C%E7%94%A8"><span class="toc-number">1.10.2.</span> <span class="toc-text"> 10.0.2 作用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1003-%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.10.3.</span> <span class="toc-text"> 10.0.3 网络模式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#10031-bridge"><span class="toc-number">1.10.3.1.</span> <span class="toc-text"> 10.0.3.1 bridge</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#10032-host"><span class="toc-number">1.10.3.2.</span> <span class="toc-text"> 10.0.3.2 host</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#10033-none"><span class="toc-number">1.10.3.3.</span> <span class="toc-text"> 10.0.3.3 none</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#10034-container"><span class="toc-number">1.10.3.4.</span> <span class="toc-text"> 10.0.3.4 container</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1011-docker-%E5%B9%B3%E5%8F%B0%E6%9E%B6%E6%9E%84%E5%9B%BE%E8%A7%A3"><span class="toc-number">1.10.4.</span> <span class="toc-text"> 10.1.1 docker 平台架构图解</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#10111%E6%95%B4%E4%BD%93%E8%AF%B4%E6%98%8E"><span class="toc-number">1.10.4.1.</span> <span class="toc-text"> 10.1.1.1. 整体说明</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#10112%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84"><span class="toc-number">1.10.4.2.</span> <span class="toc-text"> 10.1.1.2. 整体架构</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#110-docker-compose-%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92"><span class="toc-number">1.11.</span> <span class="toc-text"> 11.0 Docker-compose 容器编排</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1101-%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-number">1.11.1.</span> <span class="toc-text"> 11.0.1 是什么？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1102-%E8%83%BD%E5%B9%B2%E4%BB%80%E4%B9%88"><span class="toc-number">1.11.2.</span> <span class="toc-text"> 11.0.2 能干什么？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1103-%E5%8E%BB%E5%93%AA%E9%87%8C%E4%B8%8B%E8%BD%BD"><span class="toc-number">1.11.3.</span> <span class="toc-text"> 11.0.3 去哪里下载？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1104-compose%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5"><span class="toc-number">1.11.4.</span> <span class="toc-text"> 11.0.4 Compose 核心概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1105-compose%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">1.11.5.</span> <span class="toc-text"> 11.0.5 Compose 常用命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1106-compose%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%89%E4%B8%AA%E6%AD%A5%E9%AA%A4"><span class="toc-number">1.11.6.</span> <span class="toc-text"> 11.0.6 Compose 使用的三个步骤</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1107-compose%E7%BC%96%E6%8E%92%E5%BE%AE%E6%9C%8D%E5%8A%A1"><span class="toc-number">1.11.7.</span> <span class="toc-text"> 11.0.7 Compose 编排微服务</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#130-docker-%E8%BD%BB%E9%87%8F%E7%BA%A7%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B7%A5%E5%85%B7portainer"><span class="toc-number">1.12.</span> <span class="toc-text"> 13.0 Docker 轻量级可视化工具 Portainer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#140-docker-%E5%AE%B9%E5%99%A8%E7%9B%91%E6%8E%A7%E4%B9%8Bcadvisorinfluxdbgranfana"><span class="toc-number">1.13.</span> <span class="toc-text"> 14.0 Docker 容器监控之 CAdvisor+InfluxDB+Granfana</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#docker"><span class="toc-number">1.</span> <span class="toc-text"> docker</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4"><span class="toc-number">1.1.</span> <span class="toc-text"> docker 安装步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#docker-%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E4%BA%91%E5%8A%A0%E9%80%9F"><span class="toc-number">1.1.1.</span> <span class="toc-text"> docker 配置阿里云加速</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">1.2.</span> <span class="toc-text"> docker 常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%AE%E5%8A%A9%E5%90%AF%E5%8A%A8%E7%B1%BB%E5%91%BD%E4%BB%A4"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 帮助启动类命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%95%9C%E5%83%8F%E5%91%BD%E4%BB%A4"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 镜像命令</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E5%B7%B2%E6%9C%89%E9%95%9C%E5%83%8F"><span class="toc-number">1.2.2.1.</span> <span class="toc-text"> 显示已有镜像</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%8E%E4%BB%93%E5%BA%93%E6%9F%A5%E6%89%BE%E9%95%9C%E5%83%8F"><span class="toc-number">1.2.2.2.</span> <span class="toc-text"> 从仓库查找镜像</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E9%95%9C%E5%83%8F"><span class="toc-number">1.2.2.3.</span> <span class="toc-text"> 下载镜像</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8Bdocker%E8%B5%84%E6%BA%90%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5"><span class="toc-number">1.2.2.4.</span> <span class="toc-text"> 查看 docker 资源占用情况</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E9%95%9C%E5%83%8F"><span class="toc-number">1.2.2.5.</span> <span class="toc-text"> 删除镜像</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E4%BA%A4%E4%BA%92%E5%BC%8F%E5%AE%B9%E5%99%A8"><span class="toc-number">1.2.2.6.</span> <span class="toc-text"> 启动交互式容器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%AE%B9%E5%99%A8"><span class="toc-number">1.2.2.7.</span> <span class="toc-text"> 查看容器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%80%80%E5%87%BA%E5%AE%B9%E5%99%A8"><span class="toc-number">1.2.2.8.</span> <span class="toc-text"> 退出容器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E5%AE%B9%E5%99%A8"><span class="toc-number">1.2.2.9.</span> <span class="toc-text"> 启动容器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%81%9C%E6%AD%A2%E5%AE%B9%E5%99%A8"><span class="toc-number">1.2.2.10.</span> <span class="toc-text"> 停止容器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%87%8D%E5%90%AF%E5%AE%B9%E5%99%A8"><span class="toc-number">1.2.2.11.</span> <span class="toc-text"> 重启容器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BC%BA%E5%88%B6%E5%81%9C%E6%AD%A2%E5%AE%B9%E5%99%A8"><span class="toc-number">1.2.2.12.</span> <span class="toc-text"> 强制停止容器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E5%B7%B2%E5%81%9C%E6%AD%A2%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="toc-number">1.2.2.13.</span> <span class="toc-text"> 删除已停止的容器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97"><span class="toc-number">1.2.2.14.</span> <span class="toc-text"> 查看日志</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%AE%B9%E5%99%A8%E5%86%85%E8%BF%90%E8%A1%8C%E7%9A%84%E8%BF%9B%E7%A8%8B"><span class="toc-number">1.2.2.15.</span> <span class="toc-text"> 查看容器内运行的进程</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%87%8D%E6%96%B0%E8%BF%9B%E5%85%A5%E7%BB%88%E7%AB%AF"><span class="toc-number">1.2.2.16.</span> <span class="toc-text"> 重新进入终端</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6"><span class="toc-number">1.2.2.17.</span> <span class="toc-text"> 拷贝文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AF%BC%E5%85%A5%E5%92%8C%E5%AF%BC%E5%87%BA%E5%AE%B9%E5%99%A8"><span class="toc-number">1.2.2.18.</span> <span class="toc-text"> 导入和导出容器</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-%E9%95%9C%E5%83%8F"><span class="toc-number">1.3.</span> <span class="toc-text"> docker 镜像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-%E5%AE%B9%E5%99%A8%E6%95%B0%E6%8D%AE%E5%8D%B7"><span class="toc-number">1.4.</span> <span class="toc-text"> docker 容器数据卷</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-%E5%B8%B8%E8%A7%84%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85"><span class="toc-number">1.5.</span> <span class="toc-text"> docker 常规软件的安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4"><span class="toc-number">1.5.1.</span> <span class="toc-text"> 步骤</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85tomcat"><span class="toc-number">1.5.2.</span> <span class="toc-text"> 安装 tomcat</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85mysql"><span class="toc-number">1.5.3.</span> <span class="toc-text"> 安装 mysql</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85redis"><span class="toc-number">1.5.4.</span> <span class="toc-text"> 安装 redis</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mysql%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6"><span class="toc-number">1.6.</span> <span class="toc-text"> mysql 主从复制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E4%B8%BB%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%B9%E5%99%A8%E5%AE%9E%E4%BE%8B3307"><span class="toc-number">1.6.1.</span> <span class="toc-text"> 新建主服务器容器实例 3307</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9B%E5%85%A5-cgcusemysql-masterconf-%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%96%B0%E5%BB%BAmycnf-vim-mycnf"><span class="toc-number">1.6.2.</span> <span class="toc-text"> 进入 &#x2F;cgcuse&#x2F;mysql-master&#x2F;conf 目录下新建 my.cnf       vim my.cnf</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E5%AE%8C%E9%85%8D%E7%BD%AE%E5%90%8E%E9%87%8D%E5%90%AFmaster%E5%AE%9E%E4%BE%8B"><span class="toc-number">1.6.3.</span> <span class="toc-text"> 修改完配置后重启 master 实例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9B%E5%85%A5%E5%AE%B9%E5%99%A8"><span class="toc-number">1.6.4.</span> <span class="toc-text"> 进入容器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#master%E5%AE%B9%E5%99%A8%E5%AE%9E%E4%BE%8B%E5%86%85%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%90%8C%E6%AD%A5%E7%94%A8%E6%88%B7"><span class="toc-number">1.6.5.</span> <span class="toc-text"> master 容器实例内创建数据同步用户</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%B9%E5%99%A8%E5%AE%9E%E4%BE%8B3308"><span class="toc-number">1.6.6.</span> <span class="toc-text"> 新建从服务器容器实例 3308</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9B%E5%85%A5-cgcusemysql-slaveconf-%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%96%B0%E5%BB%BAmycnf-vim-mycnf"><span class="toc-number">1.6.7.</span> <span class="toc-text"> 进入 &#x2F;cgcuse&#x2F;mysql-slave&#x2F;conf 目录下新建 my.cnf       vim my.cnf</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E5%AE%8C%E9%85%8D%E7%BD%AE%E5%90%8E%E9%87%8D%E5%90%AFslave%E5%AE%9E%E4%BE%8B"><span class="toc-number">1.6.8.</span> <span class="toc-text"> 修改完配置后重启 slave 实例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8%E4%B8%BB%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E6%9F%A5%E7%9C%8B%E4%B8%BB%E4%BB%8E%E5%90%8C%E6%AD%A5%E7%8A%B6%E6%80%81"><span class="toc-number">1.6.9.</span> <span class="toc-text"> 在主数据库中查看主从同步状态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9B%E5%85%A5mysql-slave%E5%AE%B9%E5%99%A8"><span class="toc-number">1.6.10.</span> <span class="toc-text"> 进入 mysql-slave 容器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E9%85%8D%E7%BD%AE%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6"><span class="toc-number">1.6.11.</span> <span class="toc-text"> 在数据库中配置主从复制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8%E4%BB%8E%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E6%9F%A5%E7%9C%8B%E4%B8%BB%E4%BB%8E%E5%90%8C%E6%AD%A5%E7%8A%B6%E6%80%81"><span class="toc-number">1.6.12.</span> <span class="toc-text"> 在从数据库中查看主从同步状态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8%E4%BB%8E%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E5%BC%80%E5%90%AF%E4%B8%BB%E4%BB%8E%E5%90%8C%E6%AD%A5"><span class="toc-number">1.6.13.</span> <span class="toc-text"> 在从数据库中开启主从同步</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E4%BB%8E%E6%95%B0%E6%8D%AE%E5%BA%93%E7%8A%B6%E6%80%81%E5%8F%91%E7%8E%B0%E5%B7%B2%E7%BB%8F%E5%90%8C%E6%AD%A5"><span class="toc-number">1.6.14.</span> <span class="toc-text"> 查看从数据库状态发现已经同步</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6%E6%B5%8B%E8%AF%95"><span class="toc-number">1.6.15.</span> <span class="toc-text"> 主从复制测试</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8"><span class="toc-number">1.7.</span> <span class="toc-text"> 分布式存储</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%93%88%E5%B8%8C%E5%8F%96%E4%BD%99%E7%AE%97%E6%B3%95"><span class="toc-number">1.7.1.</span> <span class="toc-text"> 哈希取余算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%80%E8%87%B4%E6%80%A7%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95"><span class="toc-number">1.7.2.</span> <span class="toc-text"> 一致性哈希算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%93%88%E5%B8%8C%E6%A7%BD%E7%AE%97%E6%B3%95"><span class="toc-number">1.7.3.</span> <span class="toc-text"> 哈希槽算法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#redis-3%E4%B8%BB3%E4%BB%8E%E9%9B%86%E7%BE%A4"><span class="toc-number">1.8.</span> <span class="toc-text"> Redis 3 主 3 从集群</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E4%B8%BB3%E4%BB%8Eredis%E9%9B%86%E7%BE%A4%E9%85%8D%E7%BD%AE"><span class="toc-number">1.8.1.</span> <span class="toc-text"> 3 主 3 从 redis 集群配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E4%BB%8E%E5%AE%B9%E9%94%99%E5%88%87%E6%8D%A2%E8%BF%81%E7%A7%BB%E6%A1%88%E4%BE%8B"><span class="toc-number">1.8.2.</span> <span class="toc-text"> 3 从容错切换迁移案例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E4%BB%8E%E6%89%A9%E5%AE%B9%E6%A1%88%E4%BE%8B"><span class="toc-number">1.8.3.</span> <span class="toc-text"> 3 从扩容案例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E4%BB%8E%E7%BC%A9%E5%AE%B9%E6%A1%88%E4%BE%8B"><span class="toc-number">1.8.4.</span> <span class="toc-text"> 3 从缩容案例</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#dockerfile"><span class="toc-number">1.9.</span> <span class="toc-text"> DockerFile</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#dockerfile%E6%9E%84%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%A7%A3%E6%9E%90"><span class="toc-number">1.9.1.</span> <span class="toc-text"> dockerfile 构建过程解析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#dockerfile%E5%B8%B8%E7%94%A8%E4%BF%9D%E7%95%99%E5%AD%97%E6%8C%87%E4%BB%A4"><span class="toc-number">1.9.2.</span> <span class="toc-text"> DockerFile 常用保留字指令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A1%88%E4%BE%8B"><span class="toc-number">1.9.3.</span> <span class="toc-text"> 案例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%AE%9E%E6%88%98"><span class="toc-number">1.9.4.</span> <span class="toc-text"> 微服务实战</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker%E7%BD%91%E7%BB%9C"><span class="toc-number">1.10.</span> <span class="toc-text"> Docker 网络</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">1.10.1.</span> <span class="toc-text"> 常用命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%9C%E7%94%A8"><span class="toc-number">1.10.2.</span> <span class="toc-text"> 作用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.10.3.</span> <span class="toc-text"> 网络模式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#bridge"><span class="toc-number">1.10.3.1.</span> <span class="toc-text"> bridge</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#host"><span class="toc-number">1.10.3.2.</span> <span class="toc-text"> host</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#none"><span class="toc-number">1.10.3.3.</span> <span class="toc-text"> none</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#container"><span class="toc-number">1.10.3.4.</span> <span class="toc-text"> container</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#docker-%E5%B9%B3%E5%8F%B0%E6%9E%B6%E6%9E%84%E5%9B%BE%E8%A7%A3"><span class="toc-number">1.10.4.</span> <span class="toc-text"> docker 平台架构图解</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%95%B4%E4%BD%93%E8%AF%B4%E6%98%8E"><span class="toc-number">1.10.4.1.</span> <span class="toc-text"> 整体说明</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84"><span class="toc-number">1.10.4.2.</span> <span class="toc-text"> 整体架构</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-compose-%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92"><span class="toc-number">1.11.</span> <span class="toc-text"> Docker-compose 容器编排</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-number">1.11.1.</span> <span class="toc-text"> 是什么？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%83%BD%E5%B9%B2%E4%BB%80%E4%B9%88"><span class="toc-number">1.11.2.</span> <span class="toc-text"> 能干什么？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%BB%E5%93%AA%E9%87%8C%E4%B8%8B%E8%BD%BD"><span class="toc-number">1.11.3.</span> <span class="toc-text"> 去哪里下载？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#compose%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5"><span class="toc-number">1.11.4.</span> <span class="toc-text"> Compose 核心概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#compose%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">1.11.5.</span> <span class="toc-text"> Compose 常用命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#compose%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%89%E4%B8%AA%E6%AD%A5%E9%AA%A4"><span class="toc-number">1.11.6.</span> <span class="toc-text"> Compose 使用的三个步骤</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#compose%E7%BC%96%E6%8E%92%E5%BE%AE%E6%9C%8D%E5%8A%A1"><span class="toc-number">1.11.7.</span> <span class="toc-text"> Compose 编排微服务</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-%E8%BD%BB%E9%87%8F%E7%BA%A7%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B7%A5%E5%85%B7portainer"><span class="toc-number">1.12.</span> <span class="toc-text"> Docker 轻量级可视化工具 Portainer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-%E5%AE%B9%E5%99%A8%E7%9B%91%E6%8E%A7%E4%B9%8Bcadvisorinfluxdbgranfana"><span class="toc-number">1.13.</span> <span class="toc-text"> Docker 容器监控之 CAdvisor+InfluxDB+Granfana</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -1103,90 +1103,10 @@ services:
 <div class="breadcrumb">
 <a href="/categories/computer-science/" title="分类于 计算机">计算机</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/note/" title="分类于 教程">教程</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/note/theme-shoka-doc/" title="分类于 Theme Shoka Documentation">Theme Shoka Documentation</a>
-</div>
-
-    <span><a href="/computer-science/note/theme-shoka-doc/dependents/" title="Step.1 依赖插件">Step.1 依赖插件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/computer-science/" title="分类于 计算机">计算机</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/note/" title="分类于 教程">教程</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/note/theme-shoka-doc/" title="分类于 Theme Shoka Documentation">Theme Shoka Documentation</a>
-</div>
-
-    <span><a href="/computer-science/note/theme-shoka-doc/display/" title="Step.3 界面显示">Step.3 界面显示</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/computer-science/" title="分类于 计算机">计算机</a>
-<i class="ic i-angle-right"></i>
 <a href="/categories/computer-science/container/" title="分类于 容器">容器</a>
 </div>
 
     <span><a href="/computer-science/container/DockerCompose%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/dockercompose/" title="dockercompose笔记">dockercompose笔记</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/computer-science/" title="分类于 计算机">计算机</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/container/" title="分类于 容器">容器</a>
-</div>
-
-    <span><a href="/computer-science/container/DockerDesktop%E5%85%A5%E9%97%A8%E7%AE%80%E4%BB%8B/dockerdesktop/" title="dockerDesktop笔记">dockerDesktop笔记</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/computer-science/" title="分类于 计算机">计算机</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/GO/" title="分类于 GO">GO</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/GO/gobase/" title="分类于 GO基础">GO基础</a>
-</div>
-
-    <span><a href="/computer-science/GO/gobase/gostudy/gostudy01/" title="Go语言的安装">Go语言的安装</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/computer-science/" title="分类于 计算机">计算机</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/note/" title="分类于 教程">教程</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/note/theme-shoka-doc/" title="分类于 Theme Shoka Documentation">Theme Shoka Documentation</a>
-</div>
-
-    <span><a href="/computer-science/note/theme-shoka-doc/" title="Hexo主题Shoka &amp; multi-markdown-it渲染器使用说明">Hexo主题Shoka & multi-markdown-it渲染器使用说明</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/computer-science/" title="分类于 计算机">计算机</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/computer-science/container/" title="分类于 容器">容器</a>
-</div>
-
-    <span><a href="/computer-science/container/Docker/docker/" title="docker笔记">docker笔记</a></span>
   </li>
 
       
@@ -1224,6 +1144,79 @@ services:
 </div>
 
     <span><a href="/computer-science/note/theme-shoka-doc/config/" title="Step.2 基本配置">Step.2 基本配置</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机">计算机</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/note/" title="分类于 教程">教程</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/note/theme-shoka-doc/" title="分类于 Theme Shoka Documentation">Theme Shoka Documentation</a>
+</div>
+
+    <span><a href="/computer-science/note/theme-shoka-doc/" title="Hexo主题Shoka &amp; multi-markdown-it渲染器使用说明">Hexo主题Shoka & multi-markdown-it渲染器使用说明</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机">计算机</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/container/" title="分类于 容器">容器</a>
+</div>
+
+    <span><a href="/computer-science/container/DockerDesktop%E5%85%A5%E9%97%A8%E7%AE%80%E4%BB%8B/dockerdesktop/" title="dockerDesktop笔记">dockerDesktop笔记</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/code-highlight/" title="Code Highlight Style test">Code Highlight Style test</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机">计算机</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/container/" title="分类于 容器">容器</a>
+</div>
+
+    <span><a href="/computer-science/container/Docker%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%B9%8BAlpine/dockeralpine/" title="dockeralpine笔记">dockeralpine笔记</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机">计算机</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/container/" title="分类于 容器">容器</a>
+</div>
+
+    <span><a href="/computer-science/container/Docker/docker/" title="docker笔记">docker笔记</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/computer-science/" title="分类于 计算机">计算机</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/GO/" title="分类于 GO">GO</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/computer-science/GO/gobase/" title="分类于 GO基础">GO基础</a>
+</div>
+
+    <span><a href="/computer-science/GO/gobase/gostudy/gostudy01/" title="Go语言的安装">Go语言的安装</a></span>
   </li>
 
   </ul>
