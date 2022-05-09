@@ -3,27 +3,18 @@
     <id>https://hahayixiao2.github.io</id>
     <title>一个小萌新的进阶之路</title>
     <link href="https://hahayixiao2.github.io" />
-    <updated>2022-05-09T12:50:37.077Z</updated>
+    <updated>2022-05-09T10:15:48.000Z</updated>
     <category term="Foo" />
     <category term="Bar" />
     <category term="Hexo" />
     <category term="教程" />
     <category term="Docker" />
+    <category term="GO" />
     <entry>
         <id>https://hahayixiao2.github.io/computer-science/GO/gobase/gostudy/go/</id>
-        <title></title>
+        <title>Go语言</title>
         <link rel="alternate" href="https://hahayixiao2.github.io/computer-science/GO/gobase/gostudy/go/"/>
-        <content type="html">&lt;hr&gt;
-&lt;p&gt;title: Go 语言&lt;br&gt;
- date: 2022/05/09 18:15:48&lt;br&gt;
-categories:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;[计算机，GO, GO 基础]&lt;br&gt;
-tags:&lt;/li&gt;
-&lt;li&gt;GO&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;go语言简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#go语言简介&#34;&gt;#&lt;/a&gt; go 语言简介&lt;/h1&gt;
+        <content type="html">&lt;h1 id=&#34;go语言简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#go语言简介&#34;&gt;#&lt;/a&gt; go 语言简介&lt;/h1&gt;
 &lt;p&gt;Go（又称 Golang）是 Google 的 Robert Griesemer，Rob Pike 及 Ken Thompson 开发的一种静态强类型、编译型语言。Go 语言语法与 C 相近，但功能上有：内存安全，GC（垃圾回收），结构形态及 CSP-style 并发计算。&lt;/p&gt;
 &lt;h2 id=&#34;go语言特点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#go语言特点&#34;&gt;#&lt;/a&gt; go 语言特点&lt;/h2&gt;
 &lt;ol&gt;
@@ -568,7 +559,8 @@ FF
 &lt;p&gt;complex64 和 complex128&lt;/p&gt;
 &lt;figure class=&#34;highlight go&#34;&gt;&lt;figcaption data-lang=&#34;go&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;var&lt;/span&gt; c1 &lt;span class=&#34;token builtin&#34;&gt;complex64&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;c1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2i&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;var&lt;/span&gt; c2 &lt;span class=&#34;token builtin&#34;&gt;complex128&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;c2 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;3i&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;fmt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;Println&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;c1&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;fmt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;Println&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;c2&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;复数有实部和虚部，complex64 的实部和虚部为 32 位，complex128 的实部和虚部为 64 位。&lt;/p&gt;
 </content>
-        <updated>2022-05-09T12:50:37.077Z</updated>
+        <category term="GO" />
+        <updated>2022-05-09T10:15:48.000Z</updated>
     </entry>
     <entry>
         <id>https://hahayixiao2.github.io/computer-science/container/Docker/docker/</id>
