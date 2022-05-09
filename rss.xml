@@ -17,14 +17,16 @@
             <title></title>
             <link>https://hahayixiao2.github.io/computer-science/GO/gobase/gostudy/go/</link>
             <pubDate>Mon, 09 May 2022 20:50:37 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;—&lt;/p&gt;
-&lt;p&gt;title: Go 语言的安装&lt;/p&gt;
-&lt;p&gt;date: 2022/05/09 18:15:48&lt;/p&gt;
-&lt;p&gt;categories:&lt;/p&gt;
-&lt;p&gt;- [计算机，GO, GO 基础]&lt;/p&gt;
-&lt;p&gt;tags:&lt;/p&gt;
-&lt;p&gt;- GO&lt;/p&gt;
-&lt;p&gt;—&lt;/p&gt;
+            <description><![CDATA[ &lt;hr&gt;
+&lt;p&gt;title: Go 语言&lt;br&gt;
+ date: 2022/05/09 18:15:48&lt;br&gt;
+categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[计算机，GO, GO 基础]&lt;br&gt;
+tags:&lt;/li&gt;
+&lt;li&gt;GO&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
 &lt;h1 id=&#34;go语言简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#go语言简介&#34;&gt;#&lt;/a&gt; go 语言简介&lt;/h1&gt;
 &lt;p&gt;Go（又称 Golang）是 Google 的 Robert Griesemer，Rob Pike 及 Ken Thompson 开发的一种静态强类型、编译型语言。Go 语言语法与 C 相近，但功能上有：内存安全，GC（垃圾回收），结构形态及 CSP-style 并发计算。&lt;/p&gt;
 &lt;h2 id=&#34;go语言特点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#go语言特点&#34;&gt;#&lt;/a&gt; go 语言特点&lt;/h2&gt;
